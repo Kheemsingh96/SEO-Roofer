@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* ======================================
-   GLOBAL BASE
-   ====================================== */
+/* =========================
+   Global Styles (All Devices)
+   ========================= */
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +14,9 @@ body {
   background-color: #ffffff;
 }
 
-/* ======================================
-   NAVBAR (DESKTOP)
-   ====================================== */
+/* =========================
+   Navbar Desktop
+   ========================= */
 .navbar {
   width: 100%;
   height: 89px;
@@ -79,16 +79,16 @@ body {
   display: none;
 }
 
-/* ======================================
-   HERO SECTION (DESKTOP)
-   ====================================== */
+/* =========================
+   Hero Section Desktop
+   ========================= */
 .hero {
   background-color: #F2E6E6;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.container {
+.hero .container {
   max-width: 1440px;
   margin-left: 0;
   margin-right: 0;
@@ -148,7 +148,9 @@ body {
   flex-wrap: wrap;
 }
 
-/* Shared button base */
+/* =========================
+   Buttons Common (Desktop + Tablet)
+   ========================= */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -159,9 +161,9 @@ body {
   padding: 12px 22px;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
-/* Filled button */
 .btn-main {
   background-color: #8f2233;
   color: #ffffff;
@@ -172,7 +174,6 @@ body {
   background-color: #582930;
 }
 
-/* Outline button */
 .btn-outline {
   border: 1px solid #8f2233;
   color: #8f2233;
@@ -198,9 +199,9 @@ body {
   vertical-align: middle;
 }
 
-/* ======================================
-   HERO RIGHT + DECOR (DESKTOP)
-   ====================================== */
+/* =========================
+   Hero Right Desktop
+   ========================= */
 .hero-right {
   flex: 1;
   min-width: 325px;
@@ -249,9 +250,9 @@ body {
   transform: rotate(-8deg);
 }
 
-/* ======================================
-   HERO BOTTOM WAVE (DESKTOP)
-   ====================================== */
+/* =========================
+   Hero Wave Desktop
+   ========================= */
 .wave {
   position: relative;
   width: 100%;
@@ -268,9 +269,9 @@ body {
   bottom: -80px;
 }
 
-/* ======================================
-   WE UNDERSTAND SECTION (DESKTOP)
-   ====================================== */
+/* =========================
+   We Understand Section Desktop
+   ========================= */
 .we-understand-section {
   background-color: #ffffff;
   padding: 80px 20px;
@@ -393,9 +394,9 @@ body {
   height: 28px;
 }
 
-/* ======================================
-   OUR SERVICES SECTION (DESKTOP)
-   ====================================== */
+/* =========================
+   Our Services Section Desktop
+   ========================= */
 .our-services {
   background: linear-gradient(180deg, #85193C 0%, #1F060E 100%);
   position: relative;
@@ -511,9 +512,9 @@ body {
   text-decoration: underline;
 }
 
-/* ======================================
-   WHY CHOOSE US SECTION (DESKTOP)
-   ====================================== */
+/* =========================
+   Why Choose Us Section Desktop
+   ========================= */
 :root {
   --bg: #fff;
   --ink: #3b0f24;
@@ -621,26 +622,14 @@ body {
   height: auto;
 }
 
-/* ======================================
-   TESTIMONIAL SECTION (DESKTOP)
-   ====================================== */
-.container {
-  max-width: 1440px;
-  margin: 0;
-  padding: 0 60px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
+/* =========================
+   Testimonial Section Desktop
+   ========================= */
 .testimonial-section {
   background: linear-gradient(135deg, #85193C, #1F060E);
   color: white;
   text-align: center;
   padding: 60px 20px;
-  font-family: 'Poppins', sans-serif;
   position: relative;
   overflow: hidden;
 }
@@ -732,14 +721,13 @@ h2 {
   top: -40px;
 }
 
-/* ======================================
-   CTA SECTION (DESKTOP)
-   ====================================== */
+/* =========================
+   CTA Section Desktop
+   ========================= */
 .cta-section {
   background: #F2E6E6;
   text-align: center;
   padding: 70px 20px;
-  font-family: 'Poppins', sans-serif;
   color: #4A102A;
 }
 
@@ -784,15 +772,21 @@ h2 {
   flex-wrap: wrap;
 }
 
-/* reuse .btn, .btn-main, .btn-outline, .btn-icon, .btn-arrow from above */
+/* =========================
+   CTA Button Icon Override (Common)
+   ========================= */
+.btn-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
 
-/* ======================================
-   FOOTER SECTION (DESKTOP)
-   ====================================== */
+/* =========================
+   Footer Section Desktop
+   ========================= */
 .footer {
   background: linear-gradient(180deg, #1F060E 0%, #85193C 100%);
   color: #fff;
-  font-family: "Poppins", sans-serif;
   text-align: left;
   padding: 50px 80px 50px;
 }
@@ -842,7 +836,6 @@ h2 {
 .underline-line2,
 .underline-line3 {
   display: block;
-  margin-bottom: auto;
 }
 
 .underline-line1 {
@@ -900,9 +893,19 @@ h2 {
   margin: 0;
 }
 
-/* ======================================
-   HAMBURGER BUTTON (DESKTOP DEFAULT)
-   ====================================== */
+/* =========================
+   Small Screen Base (<= 768px)
+   ========================= */
+@media screen and (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+/* =========================
+   Hamburger Button Base (All Devices)
+   ========================= */
 .hamburger-btn {
   display: none;
   background: none;
@@ -917,23 +920,14 @@ h2 {
   object-fit: contain;
 }
 
-/* ======================================
-   NAV TOGGLE (≤768PX GENERIC)
-   ====================================== */
-@media screen and (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-    margin-right: 20px;
-  }
-}
-
-/* ======================================
-   NAVBAR + HERO + WE UNDERSTAND + SERVICES + WHY
-   (TABLET: 501–768PX)
-   ====================================== */
+/* =========================
+   Tablet Styles (501px – 768px)
+   ========================= */
 @media (max-width: 768px) and (min-width: 501px) {
 
-  /* NAVBAR (TABLET 501–768PX) */
+  /* =========================
+     Navbar Tablet
+     ========================= */
   .nav-links {
     display: none;
   }
@@ -960,43 +954,129 @@ h2 {
     height: 120px;
   }
 
-  /* HERO SECTION (TABLET 501–768PX) */
+  /* =========================
+     Hero Section Tablet
+     ========================= */
   .hero .container {
+    max-width: 768px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    row-gap: 30px;
   }
 
   .hero-left {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-heading {
     font-size: 35px;
     line-height: 55px;
     font-weight: 600;
-    max-width: 622px;
-    margin: 0 auto;
+    max-width: 680px;
+    margin: 0 auto 14px;
     text-align: center;
+  }
+
+  .hero-heading .red {
+    color: #85193C;
+    font-weight: 600;
+  }
+
+  .hero-heading .underline-box,
+  .hero-heading .underline-box span {
+    color: #C5172E !important;
+  }
+
+  .hero-heading br:last-of-type {
+    display: none;
+  }
+
+  .underline-box {
+    position: relative;
+    display: inline-block;
+    color: #C5172E;
+  }
+
+  .underline {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+    pointer-events: none;
   }
 
   .hero-desc {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 47px;
+    font-weight: 500;
+    max-width: 580px;
+    margin: 12px auto 26px;
     text-align: center;
-    max-width: 630px;
-    margin: 15px auto 30px;
   }
 
   .hero-buttons {
+    display: flex;
     justify-content: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+    margin-bottom: 24px;
+  }
+
+  .hero-buttons .btn {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 14px 22px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .hero-buttons .btn-main {
+    min-width: 260px;
+  }
+
+  .hero-buttons .btn-outline {
+    min-width: 150px;
+  }
+
+  .hero-buttons .btn-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+  }
+
+  .hero-buttons .btn-arrow {
+    width: 16px;
+    height: 12px;
+    margin-left: 8px;
+  }
+
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 30px;
+    margin-right: 0 !important;
+    flex: unset !important;
+    min-width: unset !important;
   }
 
   .hero-img {
-    max-width: 594px;
+    max-width: 540px;
+    width: 100%;
+    display: block;
     margin: 0 auto;
+    padding-right: 0;
   }
 
   .megaphone {
@@ -1011,19 +1091,61 @@ h2 {
 
   .ring1 {
     top: 40%;
-    left: -5%;
+    left: -1%;
   }
 
   .ring2 {
-    right: 100%;
+    right: 90%;
     bottom: -5%;
   }
 
-  /* WE UNDERSTAND (TABLET 501–768PX) */
-  .we-understand-container {
+  /* =========================
+     Tablet Shared Layout + Typography
+     ========================= */
+  .we-understand-container,
+  .our-services,
+  .why,
+  .testimonial-section,
+  .cta-section,
+  .footer {
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .we-understand-title,
+  .our-services h2,
+  .why__title,
+  .heading-box h2,
+  .cta-section h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 55px;
+  }
+
+  .we-understand-intro,
+  .we-understand-list li,
+  .sub-text,
+  .service-card p,
+  .why__lead,
+  .testimonial-box .text,
+  .cta-section p,
+  .badge__desc,
+  .footer-left p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  /* =========================
+     We Understand Section Tablet
+     ========================= */
+  .we-understand-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1048,33 +1170,28 @@ h2 {
   }
 
   .we-understand-title {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 55px;
+    order: 1;
     color: #4A102A;
     margin: 8px 0;
-    order: 1;
     position: relative;
   }
 
-  .underline-wrap {
+  .we-understand-title .accent {
     position: relative;
     display: inline-block;
   }
 
-  .underline-wrap .underline-icon {
+  .we-understand-title .underline-icon {
     position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 120px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 205px;
     height: auto;
     pointer-events: none;
   }
 
   .we-understand-intro {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 38px;
     color: #85193C;
     margin: 10px 0 20px;
     max-width: 720px;
@@ -1086,12 +1203,24 @@ h2 {
     display: flex;
     justify-content: center;
     width: 100%;
+    position: relative;
+    margin-bottom: 50px;
   }
 
   .we-understand-illustration {
     width: 467px;
     max-width: 90%;
     height: auto;
+  }
+
+  .we-understand-media .decor-dots {
+    display: block;
+    position: absolute;
+    width: 68px;
+    height: auto;
+    right: 40px;
+    bottom: -1px;
+    pointer-events: none;
   }
 
   .we-understand-content > .we-understand-list {
@@ -1104,16 +1233,13 @@ h2 {
   .we-understand-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
   }
 
   .we-understand-list li {
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 35px;
     color: #4A102A;
   }
 
@@ -1144,27 +1270,18 @@ h2 {
     pointer-events: none;
   }
 
-  .decor-dots,
-  .we-understand-media .decor-dots,
-  .we-understand-container .decor-dots {
+  .our-services .decor-dots {
     display: none;
   }
 
-  .underline-wrap {
-    display: inline-block;
-    padding-bottom: 18px;
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-size: 205px auto;
-    background-image: url("images/underline.png");
+  /* =========================
+     Our Services Section Tablet
+     ========================= */
+  .our-services {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
-  .underline-wrap > .underline-icon,
-  .underline-wrap img.underline-icon {
-    display: none;
-  }
-
-  /* OUR SERVICES (TABLET 501–768PX) */
   .our-services .pill {
     font-size: 20px;
     font-weight: 500;
@@ -1174,14 +1291,11 @@ h2 {
   }
 
   .our-services h2 {
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 40px;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     max-width: 530px;
     margin: 0 auto 12px;
-    padding: 30px 20px 10px 20px;
+    padding: 30px 20px 10px;
   }
 
   .our-services h2 span {
@@ -1190,20 +1304,10 @@ h2 {
   }
 
   .sub-text {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    max-width: 620px;
+    max-width: 663px;
     margin: 0 auto 40px;
     text-align: center;
     color: #FFE7ED;
-  }
-
-  .our-services {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .services-grid {
@@ -1215,6 +1319,7 @@ h2 {
   .service-card {
     background: #ffffff;
     width: 663px;
+    max-width: 100%;
     height: 288px;
     border-radius: 20px;
     padding: 30px;
@@ -1234,9 +1339,6 @@ h2 {
   }
 
   .service-card p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 38px;
     margin: 0;
     color: #666666;
   }
@@ -1261,9 +1363,12 @@ h2 {
     margin-left: 10px;
   }
 
-  /* WHY CHOOSE US (TABLET 501–768PX) */
+  /* =========================
+     Why Choose Us Section Tablet
+     ========================= */
   .why {
-    padding: 40px 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .why__wrap {
@@ -1274,6 +1379,7 @@ h2 {
     align-items: center;
     text-align: center;
     gap: 20px;
+    position: relative;
   }
 
   .why__left {
@@ -1294,18 +1400,12 @@ h2 {
 
   .why__title {
     order: 2;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 50px;
     color: #4A102A;
     margin: 0 0 8px;
   }
 
   .why__lead {
     order: 3;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 40px;
     color: #85193C;
     max-width: 650px;
     margin: 0 auto 18px;
@@ -1328,7 +1428,7 @@ h2 {
     position: absolute;
     width: 70px;
     top: -20px;
-    right: 90px;
+    right: 10px;
   }
 
   .badge-list {
@@ -1363,23 +1463,15 @@ h2 {
   }
 
   .badge__desc {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
     color: #4A102A;
   }
-}
 
-/* ======================================
-   TESTIMONIAL SECTION (TABLET: 501–768PX)
-   ====================================== */
-@media (max-width: 768px) and (min-width: 501px) {
-
+  /* =========================
+     Testimonial Section Tablet
+     ========================= */
   .testimonial-section {
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .heading-box {
@@ -1399,10 +1491,7 @@ h2 {
   }
 
   .heading-box h2 {
-    font-size: 30px;
     max-width: 700px;
-    font-weight: 600;
-    line-height: 50px;
     margin: 0;
     white-space: nowrap;
   }
@@ -1416,6 +1505,7 @@ h2 {
 
   .testimonial-box {
     width: 675px;
+    max-width: 100%;
     min-height: 414px;
     border-radius: 20px;
     padding: 24px;
@@ -1433,9 +1523,6 @@ h2 {
   }
 
   .testimonial-box .text {
-    font-size: 22px;
-    line-height: 37px;
-    font-weight: 500;
     color: #666666;
     margin: 0 0 12px 0;
   }
@@ -1463,16 +1550,14 @@ h2 {
     width: 40px;
     height: 40px;
   }
-}
 
-/* ======================================
-   CTA SECTION (TABLET: ≤768PX)
-   ====================================== */
-@media (max-width: 768px) {
-
+  /* =========================
+     CTA Section Tablet
+     ========================= */
   .cta-section {
     background: #F2E6E6;
-    padding: 40px 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
   }
 
@@ -1482,9 +1567,6 @@ h2 {
   }
 
   .cta-section h2 {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 40px;
     margin-bottom: 30px;
   }
 
@@ -1502,8 +1584,6 @@ h2 {
   }
 
   .cta-section p {
-    font-size: 22px;
-    line-height: 40px;
     max-width: 640px;
     margin: 0 auto 28px;
     color: #85193C;
@@ -1544,13 +1624,10 @@ h2 {
     height: 12px;
     margin-left: 8px;
   }
-}
 
-/* ======================================
-   FOOTER SECTION (TABLET: ≤768PX)
-   ====================================== */
-@media (max-width: 768px) {
-
+  /* =========================
+     Footer Tablet
+     ========================= */
   .footer {
     padding: 40px 40px 40px;
   }
@@ -1625,10 +1702,7 @@ h2 {
   .footer-container > .footer-links:nth-child(3) .footer-underline { width: 220px; }
   .footer-container > .footer-links:nth-child(4) .footer-underline { width: 150px; }
 
-  .footer-links ul {
-    margin: 0;
-    padding: 0;
-  }
+  .footer-links ul { margin: 0; padding: 0; }
 
   .footer-links ul li {
     margin-bottom: 12px;
@@ -1651,4 +1725,5 @@ h2 {
     font-weight: 400;
     text-align: left;
   }
+
 }
