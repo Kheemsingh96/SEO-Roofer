@@ -113,17 +113,24 @@ body {
   max-width: 760px;
 }
 
+/* Found. + Growing */
 .hero-heading .red {
   color: #85193C;
   font-weight: 600;
 }
 
+/* Sirf "Leads" (red + underline image ke saath) */
+.hero-heading .red.underline-box {
+  color: #C5172E !important;
+}
+
+/* underline container – isi ke relative image position hoti hai */
 .underline-box {
   position: relative;
   display: inline-block;
-  color: #C5172E;
 }
 
+/* underline image – yahi EXACT jagah pe rahega */
 .underline {
   position: absolute;
   bottom: -5px;
@@ -147,6 +154,7 @@ body {
   gap: 15px;
   flex-wrap: wrap;
 }
+
 
 /* =========================
    Buttons Common (Desktop + Tablet)
@@ -772,9 +780,7 @@ h2 {
   flex-wrap: wrap;
 }
 
-/* =========================
-   CTA Button Icon Override (Common)
-   ========================= */
+
 .btn-icon {
   width: 30px;
   height: 30px;
@@ -797,7 +803,7 @@ h2 {
   flex-wrap: wrap;
   gap: 30px;
   max-width: 1440px;
-  padding: 0 -5px;
+  padding: 0;
   margin: auto;
 }
 
@@ -921,6 +927,99 @@ h2 {
 }
 
 /* =========================
+   Tablet Offcanvas Menu 
+   ========================= */
+.tablet-menu-overlay {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 30;
+}
+
+.tablet-menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tablet-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 80vw;
+  max-width: 550px;
+  background: #ffffff;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.08);
+  padding: 24px 20px 32px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 31;
+}
+
+.tablet-menu.open {
+  transform: translateX(0);
+}
+
+.tablet-menu-close {
+  margin-left: auto;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.tablet-menu-close img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* =========================
+   FIXED LINE ALIGNMENT
+   ========================= */
+.tablet-menu-list {
+  list-style: none;
+  align-items: center;
+  margin: 24px 0 0;
+  padding: 0;
+}
+
+.tablet-menu-list li {
+  border-bottom: 1px solid #f1e5ea;
+  padding-bottom: 12px;
+}
+
+.tablet-menu-list li + li {
+  margin-top: 25px;
+}
+
+.tablet-menu-list a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 4px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: #4A102A; 
+  border-bottom: none;
+}
+
+.tablet-menu-list a img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-left: -5px;
+}
+
+/* =========================
    Tablet Styles (501px – 768px)
    ========================= */
 @media (max-width: 768px) and (min-width: 501px) {
@@ -953,6 +1052,8 @@ h2 {
     padding: 0 24px;
     height: 120px;
   }
+
+  
 
   /* =========================
      Hero Section Tablet
@@ -1459,11 +1560,11 @@ h2 {
   .badge__title {
     font-size: 20px;
     font-weight: 600;
-    color: #4A102A;
+    color: #3b0f24; /* UPDATED to match desktop (var(--ink)) */
   }
 
   .badge__desc {
-    color: #4A102A;
+    color: #3b0f24; /* UPDATED to match desktop (var(--ink)) */
   }
 
   /* =========================
@@ -1725,5 +1826,450 @@ h2 {
     font-weight: 400;
     text-align: left;
   }
+}
 
+
+/* =========================
+   MOBILE (<= 430px)
+   ========================= */
+@media screen and (max-width: 430px) {
+
+  /* Avoid horizontal scroll from fixed widths / negative margins */
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  /* Navbar: hide desktop links, show hamburger cleanly */
+  .nav-links {
+    display: none !important;
+  }
+
+  .contact-btn {
+    display: none !important;
+  }
+
+  .hamburger-btn {
+    display: inline-flex !important;
+    padding: 6px !important;
+  }
+
+  .hamburger-btn img {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .navbar {
+    padding: 10px 16px !important;
+    height: auto !important;
+  }
+
+  .logo img {
+    width: 130px !important;
+    height: auto !important;
+  }
+
+  /* Hero layout: column, center aligned */
+  .hero {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .hero .container {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 16px !important;
+  }
+
+  .hero-left {
+    width: 100% !important;
+    align-items: center !important;
+  }
+
+  .hero-heading {
+    font-size: 26px !important;
+    line-height: 34px !important;
+    margin-bottom: 10px !important;
+    max-width: 100% !important;
+  }
+
+  .hero-desc {
+    font-size: 15px !important;
+    line-height: 24px !important;
+    max-width: 100% !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* Underline adjust (Leads) */
+  .underline-box {
+    position: relative !important;
+    display: inline-block !important;
+  }
+
+  .underline {
+    bottom: -4px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100px !important;
+    max-width: 60% !important;
+    height: auto !important;
+  }
+
+  /* Hero buttons: full-width stacked */
+  .hero-buttons {
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    align-items: stretch !important;
+  }
+
+  .hero-buttons .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    font-size: 15px !important;
+    padding: 11px 14px !important;
+  }
+
+  .hero-right {
+    margin-top: 18px !important;
+    margin-right: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-width: 0 !important;
+  }
+
+  .hero-img {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .megaphone {
+    width: 60px !important;
+    bottom: -8% !important;
+    right: 10% !important;
+  }
+
+  .ring,
+  .ring1,
+  .ring2 {
+    display: none !important;
+  }
+
+  .wave img {
+    bottom: -40px !important;
+  }
+
+  /* Shared container spacing for sections */
+  .we-understand-section,
+  .our-services,
+  .why,
+  .testimonial-section,
+  .cta-section,
+  .footer {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* We Understand mobile */
+  .we-understand-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    text-align: center !important;
+  }
+
+  .we-understand-illustration {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .decor-arrow {
+    display: none !important;
+  }
+
+  .we-understand-media .decor-dots {
+    width: 48px !important;
+    right: 12px !important;
+    bottom: -8px !important;
+  }
+
+  .we-understand-title {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .we-understand-intro {
+    font-size: 15px !important;
+    line-height: 24px !important;
+  }
+
+  .we-understand-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .we-understand-list li {
+    align-items: flex-start !important;
+  }
+
+  .we-understand-list .icon {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .we-understand-list .icon img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  /* Our Services mobile */
+  .our-services {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .our-services h2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    padding: 0 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .sub-text {
+    font-size: 15px !important;
+    line-height: 24px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .our-services .decor-dots {
+    display: none !important;
+  }
+
+  .services-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .service-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    padding: 18px !important;
+    border-radius: 14px !important;
+  }
+
+  .service-card h3 {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .service-card p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .card-bottom img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .card-bottom a {
+    font-size: 15px !important;
+  }
+
+  /* Why Choose Us mobile */
+  .why__wrap {
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    text-align: center !important;
+  }
+
+  .why__title {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .why__lead {
+    font-size: 15px !important;
+    line-height: 24px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .why__art {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .why__arrow {
+    display: none !important;
+  }
+
+  .badge-list {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .badge {
+    padding: 14px !important;
+    border-radius: 14px !important;
+  }
+
+  .badge__title {
+    font-size: 16px !important;
+  }
+
+  .badge__desc {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  /* Testimonial mobile */
+  .testimonial-section {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .heading-box {
+    margin-bottom: 24px !important;
+  }
+
+  .heading-box .tag {
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .heading-box h2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    white-space: normal !important;
+  }
+
+  .testimonial-container {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .testimonial-box {
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 16px !important;
+    border-radius: 16px !important;
+  }
+
+  .testimonial-box .text {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  .testimonial-box .author {
+    font-size: 15px !important;
+  }
+
+  /* CTA mobile */
+  .cta-section {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .cta-section h2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .cta-section p {
+    font-size: 15px !important;
+    line-height: 24px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .underline-cta {
+    width: 190px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    position: relative !important;
+  }
+
+  .cta-buttons {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .cta-buttons .btn {
+    width: 100% !important;
+    font-size: 15px !important;
+    padding: 11px 14px !important;
+  }
+
+  /* Footer mobile */
+  .footer {
+    padding: 32px 16px !important;
+  }
+
+  .footer-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+  }
+
+  .footer-logo {
+    width: 120px !important;
+  }
+
+  .footer-left p {
+    font-size: 15px !important;
+    line-height: 24px !important;
+  }
+
+  .social-icons img {
+    width: 28px !important;
+    height: 28px !important;
+    margin-right: 12px !important;
+  }
+
+  .footer-links {
+    margin-left: 0 !important;
+  }
+
+  .footer-links h4 {
+    font-size: 18px !important;
+  }
+
+  .footer-links ul li a {
+    font-size: 14px !important;
+  }
+
+  .copyright {
+    font-size: 13px !important;
+  }
+
+  /* Offcanvas list tap targets smaller screens */
+  .tablet-menu-list a {
+    font-size: 18px !important;
+    padding: 10px 4px !important;
+  }
+}
+
+/* Optional: ultra small tweaks */
+@media screen and (max-width: 360px) {
+  .hero-heading {
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+  .hero-desc {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
 }

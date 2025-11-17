@@ -1,38 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- =========================
+       DOCUMENT META
+  ========================== -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seo Roofer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-  <div class="logo">
-    <img src="images/logo.png" alt="SEO Roofer Logo" />
-  </div>
 
-  <nav class="nav-links">
-    <a href="#">Home</a>
-    <a href="#">About Us</a>
-    <a href="#">Our Services</a>
-    <a href="#">FAQ</a>
-    <a href="#">Why Choose Us</a>
+  <!-- =========================
+       HEADER / NAVBAR
+  ========================== -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="SEO Roofer Logo" />
+    </div>
+
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Our Services</a>
+      <a href="#">FAQ</a>
+      <a href="#">Why Choose Us</a>
+    </nav>
+
+    <a href="#" class="contact-btn">Contact Us</a>
+
+    <button class="hamburger-btn" aria-label="menu">
+      <img src="images/hamburger Tablet.png" alt="menu" />
+    </button>
+  </header>
+
+  <!-- =========================
+       TABLET / MOBILE SLIDE MENU
+       (Hamburger Navigation)
+  ========================== -->
+  <div class="tablet-menu-overlay" id="tabletMenuOverlay"></div>
+
+  <nav class="tablet-menu" id="tabletMenu" aria-label="Mobile navigation">
+    <button class="tablet-menu-close" aria-label="Close menu">
+      <img src="images/close.png" alt="Close menu" />
+    </button>
+
+    <ul class="tablet-menu-list">
+      <li>
+        <a href="#">
+          <img src="images/home-icon.png" alt="Home" />
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/info-circle.png" alt="About us" />
+          About us
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/user-speak.png" alt="Our services" />
+          Our Services
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/question-circle.png" alt="FAQ" />
+          FAQ
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/archive-minimalistic.png" alt="Why Choose us" />
+          Why Choose us
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/phone-calling.png" alt="Contact us" />
+          Contact us
+        </a>
+      </li>
+    </ul>
   </nav>
 
-  <a href="#" class="contact-btn">Contact Us</a>
-
- 
-  <button class="hamburger-btn" aria-label="menu">
-    <img src="images/hamburger Tablet.png" alt="menu">
-  </button>
-
-</header>
-
-
-  <!-- Hero Section -->
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
   <section class="hero">
     <div class="container">
+      <!-- Hero Left: Text Content -->
       <div class="hero-left">
         <h2 class="hero-heading">
           SEO for Roofing Contractors <br />
@@ -40,7 +98,11 @@
           Get
           <span class="red underline-box">
             Leads
-            <img src="images/red-line-wave.png" alt="underline" class="underline" />
+            <img
+              src="images/red-line-wave.png"
+              alt="underline"
+              class="underline"
+            />
           </span>
           <br />
           <span class="red">Growing</span>
@@ -54,31 +116,60 @@
         <div class="hero-buttons">
           <a href="#" class="btn btn-main">
             Free Site Audit for Roofers
-            <img src="images/right-arrow.png" alt="arrow" class="btn-arrow" />
+            <img
+              src="images/right-arrow.png"
+              alt="arrow"
+              class="btn-arrow"
+            />
           </a>
           <a href="#" class="btn btn-outline">
-            <img src="images/heroicons-solid-chat.png" alt="chat icon" class="btn-icon" />
+            <img
+              src="images/heroicons-solid-chat.png"
+              alt="chat icon"
+              class="btn-icon"
+            />
             Contact Us
           </a>
         </div>
       </div>
 
+      <!-- Hero Right: Illustration & Decorative Elements -->
       <div class="hero-right">
-        <img src="images/refer-a-friend.png" alt="Hero Illustration" class="hero-img" />
-        <img src="images/megaphone-outline.png" alt="megaphone" class="megaphone" />
-        <img src="images/marun-circle-ring.png" alt="ring" class="ring ring1" />
-        <img src="images/red-circle-ring.png" alt="ring" class="ring ring2" />
+        <img
+          src="images/refer-a-friend.png"
+          alt="Hero Illustration"
+          class="hero-img"
+        />
+        <img
+          src="images/megaphone-outline.png"
+          alt="megaphone"
+          class="megaphone"
+        />
+        <img
+          src="images/marun-circle-ring.png"
+          alt="ring"
+          class="ring ring1"
+        />
+        <img
+          src="images/red-circle-ring.png"
+          alt="ring"
+          class="ring ring2"
+        />
       </div>
     </div>
+
+    <!-- Hero Bottom Wave Decoration -->
     <div class="wave">
       <img src="images/wave-1.png" alt="wave" />
     </div>
   </section>
 
-  <!-- We Understand You -->
+  <!-- =========================
+       WE UNDERSTAND YOU SECTION
+  ========================== -->
   <section class="we-understand-section">
     <div class="we-understand-container">
-      <!-- Left Side Illustration -->
+      <!-- Left: Illustration + Decorative Elements -->
       <div class="we-understand-media">
         <img
           src="images/visual-data.png"
@@ -86,12 +177,19 @@
           class="we-understand-illustration"
         />
 
-        <!-- Decorative elements -->
-        <img src="images/curved-loop-arrow.png" alt="" class="decor decor-arrow" />
-        <img src="images/starburst-8-thin.png" alt="" class="decor decor-dots" />
+        <img
+          src="images/curved-loop-arrow.png"
+          alt=""
+          class="decor decor-arrow"
+        />
+        <img
+          src="images/starburst-8-thin.png"
+          alt=""
+          class="decor decor-dots"
+        />
       </div>
 
-      <!-- Right Side Text -->
+      <!-- Right: Text Content -->
       <div class="we-understand-content">
         <div class="pill">We Understand You</div>
 
@@ -99,7 +197,11 @@
           Struggling to Get
           <span class="accent">
             Leads Online?
-            <img src="images/curved-line-2.png" class="underline-icon" alt="" />
+            <img
+              src="images/curved-line-2.png"
+              class="underline-icon"
+              alt=""
+            />
           </span>
           <br />
           You’re Not Alone.
@@ -114,7 +216,10 @@
         <ul class="we-understand-list">
           <li>
             <span class="icon">
-              <img src="images/solar-call-cancel-outline.png" alt="Phone icon" />
+              <img
+                src="images/solar-call-cancel-outline.png"
+                alt="Phone icon"
+              />
             </span>
             You’ve invested in a website, but it’s not bringing in calls.
           </li>
@@ -128,14 +233,20 @@
 
           <li>
             <span class="icon">
-              <img src="images/chat-round-line.png" alt="Speaker icon" />
+              <img
+                src="images/chat-round-line.png"
+                alt="Speaker icon"
+              />
             </span>
             You’re relying on word-of-mouth, but it’s just not enough anymore.
           </li>
 
           <li>
             <span class="icon">
-              <img src="images/flame-streamline-solar-ar.png" alt="Alert icon" />
+              <img
+                src="images/flame-streamline-solar-ar.png"
+                alt="Alert icon"
+              />
             </span>
             You’ve tried SEO before, but it felt like burning money without results.
           </li>
@@ -144,19 +255,30 @@
     </div>
   </section>
 
-  <!-- Our Services -->
+  <!-- =========================
+       OUR SERVICES SECTION
+  ========================== -->
   <section class="our-services">
     <div class="our-services-container">
+      <!-- Section Tag / Pill -->
       <div class="pill">Our Services</div>
 
+      <!-- Section Heading & Intro -->
       <h2>Roofing SEO that Actually Grows Your Business</h2>
       <p class="sub-text">
         With SEO Roofer’s proven methods, your roofing business won’t just rank—it’ll dominate:
       </p>
 
-      <img src="images/dotted-background-strip.png" alt="decor dots" class="decor-dots" />
+      <!-- Decorative Dots Background -->
+      <img
+        src="images/dotted-background-strip.png"
+        alt="decor dots"
+        class="decor-dots"
+      />
 
+      <!-- Services Grid -->
       <div class="services-grid">
+        <!-- Service Card 1 -->
         <div class="service-card">
           <h3>Local SEO for Roofers</h3>
           <p>Ensure you appear prominently in local searches like roof repair near me.”</p>
@@ -167,6 +289,7 @@
           </div>
         </div>
 
+        <!-- Service Card 2 -->
         <div class="service-card">
           <h3>On-Page SEO for Roofing</h3>
           <p>Optimize your website to rank for valuable roofing keywords.</p>
@@ -177,6 +300,7 @@
           </div>
         </div>
 
+        <!-- Service Card 3 -->
         <div class="service-card">
           <h3>Google Business Profile Optimization</h3>
           <p>Stand out with reviews and maps to attract more roofing leads.</p>
@@ -187,6 +311,7 @@
           </div>
         </div>
 
+        <!-- Service Card 4 -->
         <div class="service-card">
           <h3>Roofing SEO Link Building</h3>
           <p>Gain credibility and visibility by building authority backlinks.</p>
@@ -200,9 +325,12 @@
     </div>
   </section>
 
-  <!-- Why Choose Us -->
+  <!-- =========================
+       WHY CHOOSE US SECTION
+  ========================== -->
   <section class="why">
     <div class="why__wrap">
+      <!-- Left: Copy & Benefits -->
       <div class="why__left">
         <span class="why__chip">Why Choose Us</span>
 
@@ -216,6 +344,7 @@
           who truly understands roofing. That’s SEO Roofer.
         </p>
 
+        <!-- Badge / Benefit List -->
         <div class="badge-list">
           <div class="badge">
             <span class="badge__icon">
@@ -259,25 +388,42 @@
         </div>
       </div>
 
+      <!-- Right: Illustration -->
       <div class="why__right">
-        <img class="why__art" src="images/data-report.png" alt="Analytics illustration" />
-        <img class="why__arrow" src="images/growth-chart-arrow.png" alt="up arrow" />
+        <img
+          class="why__art"
+          src="images/data-report.png"
+          alt="Analytics illustration"
+        />
+        <img
+          class="why__arrow"
+          src="images/growth-chart-arrow.png"
+          alt="up arrow"
+        />
       </div>
     </div>
   </section>
 
-  <!-- Testmonials Section -->
+  <!-- =========================
+       TESTIMONIALS SECTION
+  ========================== -->
   <section class="testimonial-section">
-    <!-- Decorative background pattern -->
-    <img src="images/concentric-circles-white.png" alt="background pattern" class="bg-element" />
+    <!-- Background Decorative Element -->
+    <img
+      src="images/concentric-circles-white.png"
+      alt="background pattern"
+      class="bg-element"
+    />
 
+    <!-- Section Heading -->
     <div class="heading-box">
       <p class="tag">Testimonial</p>
       <h2>Roofing SEO that Actually Grows Your Business</h2>
     </div>
 
+    <!-- Testimonials Grid / Cards -->
     <div class="testimonial-container">
-      <!-- Box 1 -->
+      <!-- Testimonial 1 -->
       <div class="testimonial-box">
         <img src="images/quote.png" alt="quote" class="quote-icon" />
         <p class="text">
@@ -288,12 +434,20 @@
         </p>
         <p class="author">– Sarah M., Storm Shield Roofing</p>
         <div class="bottom-row">
-          <img src="images/rating-star.png" alt="5 star rating" class="stars" />
-          <img src="images/google.png" alt="Google logo" class="google-logo" />
+          <img
+            src="images/rating-star.png"
+            alt="5 star rating"
+            class="stars"
+          />
+          <img
+            src="images/google.png"
+            alt="Google logo"
+            class="google-logo"
+          />
         </div>
       </div>
 
-      <!-- Box 2 -->
+      <!-- Testimonial 2 -->
       <div class="testimonial-box">
         <img src="images/quote.png" alt="quote" class="quote-icon" />
         <p class="text">
@@ -304,12 +458,20 @@
         </p>
         <p class="author">– Tony D., D’Angelo Roofing Company</p>
         <div class="bottom-row">
-          <img src="images/rating-star.png" alt="5 star rating" class="stars" />
-          <img src="images/google.png" alt="Google logo" class="google-logo" />
+          <img
+            src="images/rating-star.png"
+            alt="5 star rating"
+            class="stars"
+          />
+          <img
+            src="images/google.png"
+            alt="Google logo"
+            class="google-logo"
+          />
         </div>
       </div>
 
-      <!-- Box 3 -->
+      <!-- Testimonial 3 -->
       <div class="testimonial-box">
         <img src="images/quote.png" alt="quote" class="quote-icon" />
         <p class="text">
@@ -319,47 +481,82 @@
         </p>
         <p class="author">– Rebecca F., Apex Roofing Solutions</p>
         <div class="bottom-row">
-          <img src="images/rating-star.png" alt="5 star rating" class="stars" />
-          <img src="images/google.png" alt="Google logo" class="google-logo" />
+          <img
+            src="images/rating-star.png"
+            alt="5 star rating"
+            class="stars"
+          />
+          <img
+            src="images/google.png"
+            alt="Google logo"
+            class="google-logo"
+          />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
+  <!-- =========================
+       CTA (CALL TO ACTION) SECTION
+  ========================== -->
   <section class="cta-section">
     <div class="cta-content">
+      <!-- CTA Heading -->
       <h2>
         Ready to Grow Your
         <span>Roofing Business?</span>
-        <img src="images/curved-line-3.png" alt="underline" class="underline-cta" />
+        <img
+          src="images/curved-line-3.png"
+          alt="underline"
+          class="underline-cta"
+        />
       </h2>
 
+      <!-- CTA Description -->
       <p>
         Let’s get started with a Free Roofing SEO Audit, no strings attached.
         We’ll show you exactly where your site stands and how to boost your leads.
       </p>
 
+      <!-- CTA Buttons -->
       <div class="cta-buttons">
         <a href="#" class="btn btn-main">
           Free Site Audit for Roofers
-          <img src="images/right-arrow.png" alt="arrow" class="btn-arrow" />
+          <img
+            src="images/right-arrow.png"
+            alt="arrow"
+            class="btn-arrow"
+          />
         </a>
 
         <a href="#" class="btn btn-outline">
-          <img src="images/heroicons-solid-chat.png" alt="chat" class="btn-icon" />
+          <img
+            src="images/heroicons-solid-chat.png"
+            alt="chat"
+            class="btn-icon"
+          />
           Contact Us
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Footer Section -->
+  <!-- =========================
+       FOOTER SECTION
+  ========================== -->
   <footer class="footer">
     <div class="footer-container">
+      <!-- Footer Left: Brand & Social -->
       <div class="footer-left">
-        <img src="images/logo-footer.png" alt="SEO Roofer Logo" class="footer-logo" />
-        <p>Real Teams. Real Results.<br />Zero Freelancer Headaches.</p>
+        <img
+          src="images/logo-footer.png"
+          alt="SEO Roofer Logo"
+          class="footer-logo"
+        />
+        <p>
+          Real Teams. Real Results.<br />
+          Zero Freelancer Headaches.
+        </p>
         <div class="social-icons">
           <img src="images/fb.png" alt="Facebook" />
           <img src="images/linkedin.png" alt="LinkedIn" />
@@ -368,9 +565,14 @@
         </div>
       </div>
 
+      <!-- Footer Column: Quick Links -->
       <div class="footer-links">
         <h4>Quick Links</h4>
-        <img src="images/quicklinks.png.png" alt="underline" class="footer-underline" />
+        <img
+          src="images/quicklinks.png.png"
+          alt="underline"
+          class="footer-underline"
+        />
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Services</a></li>
@@ -381,9 +583,14 @@
         </ul>
       </div>
 
+      <!-- Footer Column: Services -->
       <div class="footer-links">
         <h4>Services for Roofers</h4>
-        <img src="images/Services.png.png" alt="underline" class="footer-underline" />
+        <img
+          src="images/Services.png.png"
+          alt="underline"
+          class="footer-underline"
+        />
         <ul>
           <li><a href="#">Search Engine Optimization (SEO)</a></li>
           <li><a href="#">Pay-Per-Click (PPC)</a></li>
@@ -392,9 +599,14 @@
         </ul>
       </div>
 
+      <!-- Footer Column: Trust & Legal -->
       <div class="footer-links">
         <h4>Trust &amp; Legal</h4>
-        <img src="images/trust and legal.png.png" alt="underline" class="footer-underline" />
+        <img
+          src="images/trust and legal.png.png"
+          alt="underline"
+          class="footer-underline"
+        />
         <ul>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms of Service</a></li>
@@ -404,8 +616,16 @@
       </div>
     </div>
 
+    <!-- Footer Bottom Bar -->
     <hr />
-    <p class="copyright">© 2025 Seoroofer. All rights reserved.</p>
+    <p class="copyright">
+      © 2025 Seoroofer. All rights reserved.
+    </p>
   </footer>
+
+  <!-- =========================
+       SCRIPTS
+  ========================== -->
+  <script src="script.js"></script>
 </body>
 </html>
