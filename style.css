@@ -1832,4 +1832,435 @@ h2 {
 @media screen and (max-width: 430px) {
 }
 
+/* =========================================================
+   MOBILE STYLES (0px – 430px)
+   SAME STRUCTURE & VALUES AS TABLET, SO YOU CAN TWEAK EASILY
+   ========================================================= */
+@media (max-width: 430px) {
+
+  /* =========================
+     Navbar Mobile 
+     ========================= */
+
+
+  /* =========================
+   NAVBAR (Tablet/Mobile)
+   ========================= */
+
+.nav-links {
+  display: none;
+}
+
+.contact-btn {
+  display: none;
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 6px;     
+}
+
+.hamburger-btn img {
+  width: 36px;
+  height: 36px;
+}
+
+/* Logo */
+.logo img {
+  width: 84px;
+  height: auto;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;             
+  padding: 20px 20px;              
+  height: 59px;
+}
+
+}
+
+@media (max-width: 430px) {
+  
+/* =========================
+   Hero Section Mobile 
+   ========================= */
+@media (max-width: 480px) {
+
+  .hero {
+    margin: 0;
+    padding: 0;
+    position: relative;           
+    background-color: #F2E6E6;    
+  }
+
+  .hero .container {
+    max-width: 430px;             
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+  }
+
+  .hero-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-heading {
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 600;
+    max-width: 430px;
+    margin: 0 auto 14px;
+    text-align: center;
+  }
+
+  .hero-heading .red {
+    color: #85193C;
+    font-weight: 600;
+  }
+
+  .hero-heading .underline-box,
+  .hero-heading .underline-box span {
+    color: #C5172E;
+  }
+
+  .hero-heading br:last-of-type {
+    display: none;
+  }
+
+  .underline-box {
+    position: relative;
+    display: inline-block;
+    color: #C5172E;
+  }
+
+  .underline {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 93px;
+    height: auto;
+    pointer-events: none;
+  }
+
+  .hero-desc {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    max-width: 580px;
+    margin: 12px auto 20px;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons .btn {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 22px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .hero-buttons .btn-main {
+    min-width: 305px;
+  }
+
+  .hero-buttons .btn-outline {
+    min-width: 150px;
+  }
+
+  .hero-buttons .btn-icon {
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+  }
+
+  .hero-buttons .btn-arrow {
+    width: 16px;
+    height: 12px;
+    margin-left: 8px;
+  }
+
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 30px 0 0 0;           
+    padding: 0;
+    flex: unset !important;
+    min-width: unset !important;
+  }
+
+  .hero-img {
+    max-width: 340px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  .megaphone {
+    width: 60px;
+    right: 12%;
+    bottom: -12%;
+  }
+
+  .ring {
+    width: 11px;
+    height: 11px;
+  }
+
+  .ring1 {
+    top: 40%;
+    left: -1%;
+  }
+
+  .ring2 {
+    right: 90%;
+    bottom: -5%;
+  }
+
+
+  .wave {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    position: relative;
+    transform: translateY(-50px);   
+    
+  }
+
+  .wave img {
+    display: block;
+    width: 100%;
+    height: 37px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+}
+
  
+
+@media (max-width: 430px) {
+
+ /* =========================
+   Shared Layout + Typography (Mobile – same as Tablet)
+   ========================= */
+.we-understand-container,
+.our-services,
+.why,
+.testimonial-section,
+.cta-section,
+.footer {
+  max-width: 430px;     
+  margin: 0 auto;
+  padding-left: 15px;  
+  padding-right: 15px;
+}
+
+.we-understand-title,
+.our-services h2,
+.why__title,
+.heading-box h2,
+.cta-section h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 41px;
+}
+
+.we-understand-intro,
+.we-understand-list li,
+.sub-text,
+.service-card p,
+.why__lead,
+.testimonial-box .text,
+.cta-section p,
+.badge__desc,
+.footer-left p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 35px;
+  max-width: 430px;
+}
+
+/* =========================
+   We Understand Section Mobile 
+   ========================= */
+.we-understand-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  position: relative;
+}
+
+.we-understand-content {
+  display: contents;
+}
+
+.we-understand-content > .pill {
+  font-size: 20px;
+  font-weight: 500;
+  color: #4A102A;
+  background: #F4F4F4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 249px;
+  order: 1;
+}
+
+.we-understand-title {
+  order: 1;
+  color: #4A102A;
+  margin: 8px 0;
+  position: relative;
+}
+
+.we-understand-title .accent {
+  position: relative;
+  display: inline-block;
+}
+
+.we-understand-title .underline-icon {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 182px;
+  height: auto;
+  pointer-events: none;
+}
+
+
+.we-understand-intro {
+  color: #85193C;
+  margin: 10px 0 20px;
+  max-width: 430px;   
+  order: 1;
+  margin-left: -8px;   
+}
+
+.we-understand-media {
+  order: 2;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.we-understand-illustration {
+  width: 281px;
+  max-width: 100%;
+  height: auto;
+}
+
+.we-understand-media .decor-dots {
+  display: block;
+  position: absolute;
+  width: 47px;
+  height: auto;
+  right: 40px;
+  bottom: -1px;
+  pointer-events: none;
+}
+
+
+.we-understand-content > .we-understand-list {
+  order: 3;
+  width: 100%;
+  max-width: 430px;
+  text-align: left;
+  margin-left: -30px;   
+}
+
+.we-understand-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.we-understand-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  color: #4A102A;
+  max-width: 430px;    
+}
+
+
+.we-understand-list .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #85193C;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+.we-understand-list .icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ARROW – untouched */
+.decor-arrow {
+  display: block;
+  position: absolute;
+  top: -550px;
+  left: -28px;
+  right: -100px;
+  bottom: auto;
+  width: 32px;
+  transform: rotate(0deg);
+  pointer-events: none;
+}
+
+.our-services .decor-dots {
+  display: none;
+}
+
+
+
+}
+
+
+
+
+
+
+
