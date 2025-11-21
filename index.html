@@ -7,618 +7,600 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Seo Roofer</title>
+  <title>Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- =========================
-       HEADER / NAVBAR
-  ========================== -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="images/logo.png" alt="SEO Roofer Logo" />
-    </div>
+       PAGE WRAPPER (for desktop scaling)
+       ========================== -->
+  <div class="page-wrapper">
 
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Our Services</a>
-      <a href="#">FAQ</a>
-      <a href="#">Why Choose Us</a>
+    <!-- =========================
+         HEADER / NAVBAR
+    ========================== -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="SEO Roofer Logo" />
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="our services.html">Our Services</a>
+        <a href="faq.html">FAQ</a>
+        <a href="why choose.html">Why Choose Us</a>
+      </nav>
+
+      <a href="contact us.html" class="contact-btn">Contact Us</a>
+
+      <button class="hamburger-btn" aria-label="menu">
+        <img src="images/hamburger Tablet.png" alt="menu" />
+      </button>
+    </header>
+
+    <!-- =========================
+         TABLET / MOBILE SLIDE MENU
+         (Hamburger Navigation)
+    ========================== -->
+    <div class="tablet-menu-overlay" id="tabletMenuOverlay"></div>
+
+    <nav class="tablet-menu" id="tabletMenu" aria-label="Mobile navigation">
+      <button class="tablet-menu-close" aria-label="Close menu">
+        <img src="images/close.png" alt="Close menu" />
+      </button>
+
+      <ul class="tablet-menu-list">
+        <li>
+          <a href="index.html">
+            <img src="images/home-icon.png" alt="Home" />
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="about us.html">
+            <img src="images/info-circle.png" alt="About us" />
+            About us
+          </a>
+        </li>
+        <li>
+          <a href="our services.html">
+            <img src="images/user-speak.png" alt="Our services" />
+            Our Services
+          </a>
+        </li>
+        <li>
+          <a href="faq.html">
+            <img src="images/question-circle.png" alt="FAQ" />
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a href="why choose.html">
+            <img src="images/archive-minimalistic.png" alt="Why Choose us" />
+            Why Choose us
+          </a>
+        </li>
+        <li>
+          <a href="contact us.html">
+            <img src="images/phone-calling.png" alt="Contact us" />
+            Contact us
+          </a>
+        </li>
+      </ul>
     </nav>
 
-    <a href="#" class="contact-btn">Contact Us</a>
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <section class="hero">
+      <div class="container">
+        <!-- Hero Left: Text Content -->
+        <div class="hero-left">
+          <h2 class="hero-heading">
+            SEO for Roofing Contractors <br />
+            Get <span class="red">Found.</span>
+            Get
+            <span class="red underline-box">
+              Leads
+              <img src="images/red-line-wave.png" alt="underline" class="underline" />
+            </span>
+            Get <span class="red">Growing</span>
+          </h2>
 
-    <button class="hamburger-btn" aria-label="menu">
-      <img src="images/hamburger Tablet.png" alt="menu" />
-    </button>
-  </header>
+          <p class="hero-desc">
+            Don’t let your competitors steal the spotlight. With our proven SEO for roofers,
+            your business can rank higher, attract more leads, and dominate the local roofing market.
+          </p>
 
-  <!-- =========================
-       TABLET / MOBILE SLIDE MENU
-       (Hamburger Navigation)
-  ========================== -->
-  <div class="tablet-menu-overlay" id="tabletMenuOverlay"></div>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-main">
+              Free Site Audit for Roofers
+              <img src="images/right-arrow.png" alt="arrow" class="btn-arrow" />
+            </a>
+            <a href="#" class="btn btn-outline">
+              <img src="images/heroicons-solid-chat.png" alt="chat icon" class="btn-icon" />
+              Contact Us
+            </a>
+          </div>
+        </div>
 
-  <nav class="tablet-menu" id="tabletMenu" aria-label="Mobile navigation">
-    <button class="tablet-menu-close" aria-label="Close menu">
-      <img src="images/close.png" alt="Close menu" />
-    </button>
+        <!-- Hero Right: Illustration & Decorative Elements -->
+        <div class="hero-right">
+          <img src="images/refer-a-friend.png" alt="Hero Illustration" class="hero-img" />
+          <img src="images/megaphone-outline.png" alt="megaphone" class="megaphone" />
+          <img src="images/marun-circle-ring.png" alt="ring" class="ring ring1" />
+          <img src="images/red-circle-ring.png" alt="ring" class="ring ring2" />
+        </div>
+      </div>
 
-    <ul class="tablet-menu-list">
-      <li>
-        <a href="#">
-          <img src="images/home-icon.png" alt="Home" />
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/info-circle.png" alt="About us" />
-          About us
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/user-speak.png" alt="Our services" />
-          Our Services
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/question-circle.png" alt="FAQ" />
-          FAQ
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/archive-minimalistic.png" alt="Why Choose us" />
-          Why Choose us
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/phone-calling.png" alt="Contact us" />
-          Contact us
-        </a>
-      </li>
-    </ul>
-  </nav>
+      <!-- Hero Bottom Wave Decoration -->
+      <div class="wave">
+        <img src="images/wave-1.png" alt="wave" />
+      </div>
+    </section>
 
-  <!-- =========================
-       HERO SECTION
-  ========================== -->
-  <section class="hero">
-    <div class="container">
-      <!-- Hero Left: Text Content -->
-      <div class="hero-left">
-       <h2 class="hero-heading">
-  SEO for Roofing Contractors <br />
-  Get <span class="red">Found.</span>
-  Get
-  <span class="red underline-box">
-    Leads
-    <img src="images/red-line-wave.png" alt="underline" class="underline" />
-  </span>
-  Get <span class="red">Growing</span>
-</h2>
+    <!-- =========================
+         WE UNDERSTAND YOU SECTION
+    ========================== -->
+    <section class="we-understand-section">
+      <div class="we-understand-container">
+        <!-- Left: Illustration + Decorative Elements -->
+        <div class="we-understand-media">
+          <img
+            src="images/visual-data.png"
+            alt="Roofer analyzing website performance"
+            class="we-understand-illustration"
+          />
 
+          <img
+            src="images/curved-loop-arrow.png"
+            alt=""
+            class="decor decor-arrow"
+          />
+          <img
+            src="images/starburst-8-thin.png"
+            alt=""
+            class="decor decor-dots"
+          />
+        </div>
 
-        <p class="hero-desc">
-          Don’t let your competitors steal the spotlight. With our proven SEO for roofers,
-          your business can rank higher, attract more leads, and dominate the local roofing market.
+        <!-- Right: Text Content -->
+        <div class="we-understand-content">
+          <div class="pill">We Understand You</div>
+
+          <h2 class="we-understand-title">
+            Struggling to Get
+            <span class="accent">
+              Leads Online?
+              <img
+                src="images/curved-line-2.png"
+                class="underline-icon"
+                alt=""
+              />
+            </span>
+            <br />
+            You’re Not Alone.
+          </h2>
+
+          <p class="we-understand-intro">
+            You're a roofer, not a digital marketer. You're out there climbing roofs,
+            managing crews, and quoting jobs. But when it comes to getting found
+            online? That’s where things get frustrating.
+          </p>
+
+          <ul class="we-understand-list">
+            <li>
+              <span class="icon">
+                <img
+                  src="images/solar-call-cancel-outline.png"
+                  alt="Phone icon"
+                />
+              </span>
+              You’ve invested in a website, but it’s not bringing in calls.
+            </li>
+
+            <li>
+              <span class="icon">
+                <img src="images/thumbs-down.png" alt="Chat icon" />
+              </span>
+              Your competitors show up in Google even the ones you know don’t do quality work.
+            </li>
+
+            <li>
+              <span class="icon">
+                <img
+                  src="images/chat-round-line.png"
+                  alt="Speaker icon"
+                />
+              </span>
+              You’re relying on word-of-mouth, but it’s just not enough anymore.
+            </li>
+
+            <li>
+              <span class="icon">
+                <img
+                  src="images/flame-streamline-solar-ar.png"
+                  alt="Alert icon"
+                />
+              </span>
+              You’ve tried SEO before, but it felt like burning money without results.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         OUR SERVICES SECTION
+    ========================== -->
+    <section class="our-services">
+      <div class="our-services-container">
+        <!-- Section Tag / Pill -->
+        <div class="pill">Our Services</div>
+
+        <!-- Section Heading & Intro -->
+        <h2>Roofing SEO that Actually Grows Your Business</h2>
+        <p class="sub-text">
+          With SEO Roofer’s proven methods, your roofing business won’t just rank—it’ll dominate:
         </p>
 
-        <div class="hero-buttons">
+        <!-- Decorative Dots Background -->
+        <img
+          src="images/dotted-background-strip.png"
+          alt="decor dots"
+          class="decor-dots"
+        />
+
+        <!-- Services Grid -->
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="service-card">
+            <h3>Local SEO for Roofers</h3>
+            <p>Ensure you appear prominently in local searches like roof repair near me.”</p>
+            <hr />
+            <div class="card-bottom">
+              <img src="images/arcticons-map.png" alt="location icon" />
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card">
+            <h3>On-Page SEO for Roofing</h3>
+            <p>Optimize your website to rank for valuable roofing keywords.</p>
+            <hr />
+            <div class="card-bottom">
+              <img src="images/web-programming.png" alt="code icon" />
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card">
+            <h3>Google Business Profile Optimization</h3>
+            <p>Stand out with reviews and maps to attract more roofing leads.</p>
+            <hr />
+            <div class="card-bottom">
+              <img src="images/verified.png" alt="google business icon" />
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="service-card">
+            <h3>Roofing SEO Link Building</h3>
+            <p>Gain credibility and visibility by building authority backlinks.</p>
+            <hr />
+            <div class="card-bottom">
+              <img src="images/link.png" alt="link icon" />
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         WHY CHOOSE US SECTION
+    ========================== -->
+    <section class="why">
+      <div class="why__wrap">
+        <!-- Left: Copy & Benefits -->
+        <div class="why__left">
+          <span class="why__chip">Why Choose Us</span>
+
+          <h2 class="why__title">
+            Finally, an SEO Company Built<br />Only for Roofers
+          </h2>
+
+          <p class="why__lead">
+            Forget generic SEO firms. SEORoofer understands exactly what roofers
+            need because SEO for roofing is all we do. You deserve an SEO partner
+            who truly understands roofing. That’s SEO Roofer.
+          </p>
+
+          <!-- Badge / Benefit List -->
+          <div class="badge-list">
+            <div class="badge">
+              <span class="badge__icon">
+                <img src="images/checkmark-red.png" alt="check icon" />
+              </span>
+              <p class="badge__content">
+                <span class="badge__title">Expertise:</span>
+                <span class="badge__desc">Our team lives and breathes SEO roofing strategies daily.</span>
+              </p>
+            </div>
+
+            <div class="badge">
+              <span class="badge__icon">
+                <img src="images/checkmark-red.png" alt="check icon" />
+              </span>
+              <p class="badge__content">
+                <span class="badge__title">Local Dominance:</span>
+                <span class="badge__desc">We master Google’s map listings, so when homeowners search, they find you first.</span>
+              </p>
+            </div>
+
+            <div class="badge">
+              <span class="badge__icon">
+                <img src="images/checkmark-red.png" alt="check icon" />
+              </span>
+              <p class="badge__content">
+                <span class="badge__title">No Contracts:</span>
+                <span class="badge__desc">Real results keep our clients, not binding contracts.</span>
+              </p>
+            </div>
+
+            <div class="badge">
+              <span class="badge__icon">
+                <img src="images/checkmark-red.png" alt="check icon" />
+              </span>
+              <p class="badge__content">
+                <span class="badge__title">Monthly Reporting:</span>
+                <span class="badge__desc">Our team lives and breathes SEO roofing strategies daily.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Illustration -->
+        <div class="why__right">
+          <img
+            class="why__art"
+            src="images/data-report.png"
+            alt="Analytics illustration"
+          />
+          <img
+            class="why__arrow"
+            src="images/growth-chart-arrow.png"
+            alt="up arrow"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         TESTIMONIALS SECTION
+    ========================== -->
+    <section class="testimonial-section">
+      <!-- Background Decorative Element -->
+      <img
+        src="images/concentric-circles-white.png"
+        alt="background pattern"
+        class="bg-element"
+      />
+
+      <!-- Section Heading -->
+      <div class="heading-box">
+        <p class="tag">Testimonial</p>
+        <h2>Roofing Contractors Trust SEO Roofer</h2>
+      </div>
+
+      <!-- Testimonials Grid / Cards -->
+      <div class="testimonial-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-box">
+          <img src="images/quote.png" alt="quote" class="quote-icon" />
+          <p class="text">
+            We've worked with other marketing companies before, but no one understands
+            SEO for roofing contractors like SEORoofer. They knew exactly how to position
+            our business to show up on Google—and fast. We're getting more qualified leads
+            every week, and we've finally stopped wasting money on ads that don't work.
+          </p>
+          <p class="author">– Sarah M., Storm Shield Roofing</p>
+          <div class="bottom-row">
+            <img
+              src="images/rating-star.png"
+              alt="5 star rating"
+              class="stars"
+            />
+            <img
+              src="images/google.png"
+              alt="Google logo"
+              class="google-logo"
+            />
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-box">
+          <img src="images/quote.png" alt="quote" class="quote-icon" />
+          <p class="text">
+            I was skeptical about SEO at first, but SEORoofer proved me wrong. Within
+            three months, we jumped from page 4 to page 1 in our city. Calls increased,
+            website traffic went up, and our sales grew steadily. Their deep knowledge
+            of SEO for roofers made a huge difference.
+          </p>
+          <p class="author">– Tony D., D’Angelo Roofing Company</p>
+          <div class="bottom-row">
+            <img
+              src="images/rating-star.png"
+              alt="5 star rating"
+              class="stars"
+            />
+            <img
+              src="images/google.png"
+              alt="Google logo"
+              class="google-logo"
+            />
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-box">
+          <img src="images/quote.png" alt="quote" class="quote-icon" />
+          <p class="text">
+            Before SEORoofer, we barely showed up in search results. Now, we’re ranking
+            #1 for key terms in our area. Their team really understands roofing SEO and
+            doesn’t use cookie-cutter tactics. Everything was tailored to our market and goals.
+          </p>
+          <p class="author">– Rebecca F. Apex Roofing Solutions</p>
+          <div class="bottom-row">
+            <img
+              src="images/rating-star.png"
+              alt="5 star rating"
+              class="stars"
+            />
+            <img
+              src="images/google.png"
+              alt="Google logo"
+              class="google-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CTA (CALL TO ACTION) SECTION
+    ========================== -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <!-- CTA Heading -->
+        <h2>
+          Ready to Grow Your
+          <span>Roofing Business?</span>
+          <img
+            src="images/curved-line-3.png"
+            alt="underline"
+            class="underline-cta"
+          />
+        </h2>
+
+        <!-- CTA Description -->
+        <p>
+          Let’s get started with a Free Roofing SEO Audit, no strings attached.
+          We’ll show you exactly where your site stands and how to boost your leads.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="cta-buttons">
           <a href="#" class="btn btn-main">
-            Free Site Audit for Roofers
+            Claim My Free SEO Audit Now
             <img
               src="images/right-arrow.png"
               alt="arrow"
               class="btn-arrow"
             />
           </a>
+
           <a href="#" class="btn btn-outline">
             <img
               src="images/heroicons-solid-chat.png"
-              alt="chat icon"
+              alt="chat"
               class="btn-icon"
             />
             Contact Us
           </a>
         </div>
       </div>
+    </section>
 
-      <!-- Hero Right: Illustration & Decorative Elements -->
-      <div class="hero-right">
-        <img
-          src="images/refer-a-friend.png"
-          alt="Hero Illustration"
-          class="hero-img"
-        />
-        <img
-          src="images/megaphone-outline.png"
-          alt="megaphone"
-          class="megaphone"
-        />
-        <img
-          src="images/marun-circle-ring.png"
-          alt="ring"
-          class="ring ring1"
-        />
-        <img
-          src="images/red-circle-ring.png"
-          alt="ring"
-          class="ring ring2"
-        />
+    <!-- =========================
+         FOOTER SECTION
+    ========================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Footer Left: Brand & Social -->
+        <div class="footer-left">
+          <img
+            src="images/logo-footer.png"
+            alt="SEO Roofer Logo"
+            class="footer-logo"
+          />
+          <p>
+            Real Teams. Real Results.<br />
+            Zero Freelancer Headaches.
+          </p>
+          <div class="social-icons">
+            <img src="images/fb.png" alt="Facebook" />
+            <img src="images/linkedin.png" alt="LinkedIn" />
+            <img src="images/youtube.png" alt="YouTube" />
+            <img src="images/x.png" alt="Twitter X" />
+          </div>
+        </div>
+
+        <!-- Footer Column: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <img
+            src="images/quicklinks.png.png"
+            alt="underline"
+            class="footer-underline"
+          />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Why Seorofer</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column: Services -->
+        <div class="footer-links">
+          <h4>Services for Roofers</h4>
+          <img
+            src="images/Services.png.png"
+            alt="underline"
+            class="footer-underline"
+          />
+          <ul>
+            <li><a href="#">Search Engine Optimization (SEO)</a></li>
+            <li><a href="#">Pay-Per-Click (PPC)</a></li>
+            <li><a href="#">Social Media Management</a></li>
+            <li><a href="#">Website Design &amp; Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column: Trust & Legal -->
+        <div class="footer-links">
+          <h4>Trust &amp; Legal</h4>
+          <img
+            src="images/trust and legal.png.png"
+            alt="underline"
+            class="footer-underline"
+          />
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">DMCA</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <!-- Hero Bottom Wave Decoration -->
-    <div class="wave">
-      <img src="images/wave-1.png" alt="wave" />
-    </div>
-  </section>
-
-  <!-- =========================
-       WE UNDERSTAND YOU SECTION
-  ========================== -->
-  <section class="we-understand-section">
-    <div class="we-understand-container">
-      <!-- Left: Illustration + Decorative Elements -->
-      <div class="we-understand-media">
-        <img
-          src="images/visual-data.png"
-          alt="Roofer analyzing website performance"
-          class="we-understand-illustration"
-        />
-
-        <img
-          src="images/curved-loop-arrow.png"
-          alt=""
-          class="decor decor-arrow"
-        />
-        <img
-          src="images/starburst-8-thin.png"
-          alt=""
-          class="decor decor-dots"
-        />
-      </div>
-
-      <!-- Right: Text Content -->
-      <div class="we-understand-content">
-        <div class="pill">We Understand You</div>
-
-        <h2 class="we-understand-title">
-          Struggling to Get
-          <span class="accent">
-            Leads Online?
-            <img
-              src="images/curved-line-2.png"
-              class="underline-icon"
-              alt=""
-            />
-          </span>
-          <br />
-          You’re Not Alone.
-        </h2>
-
-        <p class="we-understand-intro">
-          You're a roofer, not a digital marketer. You're out there climbing roofs,
-          managing crews, and quoting jobs. But when it comes to getting found
-          online? That’s where things get frustrating.
-        </p>
-
-        <ul class="we-understand-list">
-          <li>
-            <span class="icon">
-              <img
-                src="images/solar-call-cancel-outline.png"
-                alt="Phone icon"
-              />
-            </span>
-            You’ve invested in a website, but it’s not bringing in calls.
-          </li>
-
-          <li>
-            <span class="icon">
-              <img src="images/thumbs-down.png" alt="Chat icon" />
-            </span>
-            Your competitors show up in Google even the ones you know don’t do quality work.
-          </li>
-
-          <li>
-            <span class="icon">
-              <img
-                src="images/chat-round-line.png"
-                alt="Speaker icon"
-              />
-            </span>
-            You’re relying on word-of-mouth, but it’s just not enough anymore.
-          </li>
-
-          <li>
-            <span class="icon">
-              <img
-                src="images/flame-streamline-solar-ar.png"
-                alt="Alert icon"
-              />
-            </span>
-            You’ve tried SEO before, but it felt like burning money without results.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       OUR SERVICES SECTION
-  ========================== -->
-  <section class="our-services">
-    <div class="our-services-container">
-      <!-- Section Tag / Pill -->
-      <div class="pill">Our Services</div>
-
-      <!-- Section Heading & Intro -->
-      <h2>Roofing SEO that Actually Grows Your Business</h2>
-      <p class="sub-text">
-        With SEO Roofer’s proven methods, your roofing business won’t just rank—it’ll dominate:
+      <!-- Footer Bottom Bar -->
+      <hr />
+      <p class="copyright">
+        © 2025 Seoroofer. All rights reserved.
       </p>
+    </footer>
 
-      <!-- Decorative Dots Background -->
-      <img
-        src="images/dotted-background-strip.png"
-        alt="decor dots"
-        class="decor-dots"
-      />
-
-      <!-- Services Grid -->
-      <div class="services-grid">
-        <!-- Service Card 1 -->
-        <div class="service-card">
-          <h3>Local SEO for Roofers</h3>
-          <p>Ensure you appear prominently in local searches like roof repair near me.”</p>
-          <hr />
-          <div class="card-bottom">
-            <img src="images/arcticons-map.png" alt="location icon" />
-            <a href="#">READ MORE</a>
-          </div>
-        </div>
-
-        <!-- Service Card 2 -->
-        <div class="service-card">
-          <h3>On-Page SEO for Roofing</h3>
-          <p>Optimize your website to rank for valuable roofing keywords.</p>
-          <hr />
-          <div class="card-bottom">
-            <img src="images/web-programming.png" alt="code icon" />
-            <a href="#">READ MORE</a>
-          </div>
-        </div>
-
-        <!-- Service Card 3 -->
-        <div class="service-card">
-          <h3>Google Business Profile Optimization</h3>
-          <p>Stand out with reviews and maps to attract more roofing leads.</p>
-          <hr />
-          <div class="card-bottom">
-            <img src="images/verified.png" alt="google business icon" />
-            <a href="#">READ MORE</a>
-          </div>
-        </div>
-
-        <!-- Service Card 4 -->
-        <div class="service-card">
-          <h3>Roofing SEO Link Building</h3>
-          <p>Gain credibility and visibility by building authority backlinks.</p>
-          <hr />
-          <div class="card-bottom">
-            <img src="images/link.png" alt="link icon" />
-            <a href="#">READ MORE</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       WHY CHOOSE US SECTION
-  ========================== -->
-  <section class="why">
-    <div class="why__wrap">
-      <!-- Left: Copy & Benefits -->
-      <div class="why__left">
-        <span class="why__chip">Why Choose Us</span>
-
-        <h2 class="why__title">
-          Finally, an SEO Company Built<br />Only for Roofers
-        </h2>
-
-        <p class="why__lead">
-          Forget generic SEO firms. SEORoofer understands exactly what roofers
-          need because SEO for roofing is all we do. You deserve an SEO partner
-          who truly understands roofing. That’s SEO Roofer.
-        </p>
-
-        <!-- Badge / Benefit List -->
-        <div class="badge-list">
-          <div class="badge">
-            <span class="badge__icon">
-              <img src="images/checkmark-red.png" alt="check icon" />
-            </span>
-            <p class="badge__content">
-              <span class="badge__title">Expertise:</span>
-              <span class="badge__desc">Our team lives and breathes SEO roofing strategies daily.</span>
-            </p>
-          </div>
-
-          <div class="badge">
-            <span class="badge__icon">
-              <img src="images/checkmark-red.png" alt="check icon" />
-            </span>
-            <p class="badge__content">
-              <span class="badge__title">Local Dominance:</span>
-              <span class="badge__desc">We master Google’s map listings, so when homeowners search, they find you first.</span>
-            </p>
-          </div>
-
-          <div class="badge">
-            <span class="badge__icon">
-              <img src="images/checkmark-red.png" alt="check icon" />
-            </span>
-            <p class="badge__content">
-              <span class="badge__title">No Contracts:</span>
-              <span class="badge__desc">Real results keep our clients, not binding contracts.</span>
-            </p>
-          </div>
-
-          <div class="badge">
-            <span class="badge__icon">
-              <img src="images/checkmark-red.png" alt="check icon" />
-            </span>
-            <p class="badge__content">
-              <span class="badge__title">Monthly Reporting:</span>
-              <span class="badge__desc">Our team lives and breathes SEO roofing strategies daily.</span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right: Illustration -->
-      <div class="why__right">
-        <img
-          class="why__art"
-          src="images/data-report.png"
-          alt="Analytics illustration"
-        />
-        <img
-          class="why__arrow"
-          src="images/growth-chart-arrow.png"
-          alt="up arrow"
-        />
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       TESTIMONIALS SECTION
-  ========================== -->
-  <section class="testimonial-section">
-    <!-- Background Decorative Element -->
-    <img
-      src="images/concentric-circles-white.png"
-      alt="background pattern"
-      class="bg-element"
-    />
-
-    <!-- Section Heading -->
-    <div class="heading-box">
-      <p class="tag">Testimonial</p>
-      <h2>Roofing Contractors Trust SEO Roofer</h2>
-    </div>
-
-    <!-- Testimonials Grid / Cards -->
-    <div class="testimonial-container">
-      <!-- Testimonial 1 -->
-      <div class="testimonial-box">
-        <img src="images/quote.png" alt="quote" class="quote-icon" />
-        <p class="text">
-          We've worked with other marketing companies before, but no one understands
-          SEO for roofing contractors like SEORoofer. They knew exactly how to position
-          our business to show up on Google—and fast. We're getting more qualified leads
-          every week, and we've finally stopped wasting money on ads that don't work.
-        </p>
-        <p class="author">– Sarah M., Storm Shield Roofing</p>
-        <div class="bottom-row">
-          <img
-            src="images/rating-star.png"
-            alt="5 star rating"
-            class="stars"
-          />
-          <img
-            src="images/google.png"
-            alt="Google logo"
-            class="google-logo"
-          />
-        </div>
-      </div>
-
-      <!-- Testimonial 2 -->
-      <div class="testimonial-box">
-        <img src="images/quote.png" alt="quote" class="quote-icon" />
-        <p class="text">
-          I was skeptical about SEO at first, but SEORoofer proved me wrong. Within
-          three months, we jumped from page 4 to page 1 in our city. Calls increased,
-          website traffic went up, and our sales grew steadily. Their deep knowledge
-          of SEO for roofers made a huge difference.
-        </p>
-        <p class="author">– Tony D., D’Angelo Roofing Company</p>
-        <div class="bottom-row">
-          <img
-            src="images/rating-star.png"
-            alt="5 star rating"
-            class="stars"
-          />
-          <img
-            src="images/google.png"
-            alt="Google logo"
-            class="google-logo"
-          />
-        </div>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="testimonial-box">
-        <img src="images/quote.png" alt="quote" class="quote-icon" />
-        <p class="text">
-          Before SEORoofer, we barely showed up in search results. Now, we’re ranking
-          #1 for key terms in our area. Their team really understands roofing SEO and
-          doesn’t use cookie-cutter tactics. Everything was tailored to our market and goals.
-        </p>
-        <p class="author">– Rebecca F., Apex Roofing Solutions</p>
-        <div class="bottom-row">
-          <img
-            src="images/rating-star.png"
-            alt="5 star rating"
-            class="stars"
-          />
-          <img
-            src="images/google.png"
-            alt="Google logo"
-            class="google-logo"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       CTA (CALL TO ACTION) SECTION
-  ========================== -->
-  <section class="cta-section">
-    <div class="cta-content">
-      <!-- CTA Heading -->
-      <h2>
-        Ready to Grow Your
-        <span>Roofing Business?</span>
-        <img
-          src="images/curved-line-3.png"
-          alt="underline"
-          class="underline-cta"
-        />
-      </h2>
-
-      <!-- CTA Description -->
-      <p>
-        Let’s get started with a Free Roofing SEO Audit, no strings attached.
-        We’ll show you exactly where your site stands and how to boost your leads.
-      </p>
-
-      <!-- CTA Buttons -->
-      <div class="cta-buttons">
-        <a href="#" class="btn btn-main">
-         Claim My Free SEO Audit Now
-          <img
-            src="images/right-arrow.png"
-            alt="arrow"
-            class="btn-arrow"
-          />
-        </a>
-
-        <a href="#" class="btn btn-outline">
-          <img
-            src="images/heroicons-solid-chat.png"
-            alt="chat"
-            class="btn-icon"
-          />
-          Contact Us
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       FOOTER SECTION
-  ========================== -->
-  <footer class="footer">
-    <div class="footer-container">
-      <!-- Footer Left: Brand & Social -->
-      <div class="footer-left">
-        <img
-          src="images/logo-footer.png"
-          alt="SEO Roofer Logo"
-          class="footer-logo"
-        />
-        <p>
-          Real Teams. Real Results.<br />
-          Zero Freelancer Headaches.
-        </p>
-        <div class="social-icons">
-          <img src="images/fb.png" alt="Facebook" />
-          <img src="images/linkedin.png" alt="LinkedIn" />
-          <img src="images/youtube.png" alt="YouTube" />
-          <img src="images/x.png" alt="Twitter X" />
-        </div>
-      </div>
-
-      <!-- Footer Column: Quick Links -->
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <img
-          src="images/quicklinks.png.png"
-          alt="underline"
-          class="footer-underline"
-        />
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Why Seorofer</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Footer Column: Services -->
-      <div class="footer-links">
-        <h4>Services for Roofers</h4>
-        <img
-          src="images/Services.png.png"
-          alt="underline"
-          class="footer-underline"
-        />
-        <ul>
-          <li><a href="#">Search Engine Optimization (SEO)</a></li>
-          <li><a href="#">Pay-Per-Click (PPC)</a></li>
-          <li><a href="#">Social Media Management</a></li>
-          <li><a href="#">Website Design &amp; Development</a></li>
-        </ul>
-      </div>
-
-      <!-- Footer Column: Trust & Legal -->
-      <div class="footer-links">
-        <h4>Trust &amp; Legal</h4>
-        <img
-          src="images/trust and legal.png.png"
-          alt="underline"
-          class="footer-underline"
-        />
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Disclaimer</a></li>
-          <li><a href="#">DMCA</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Footer Bottom Bar -->
-    <hr />
-    <p class="copyright">
-      © 2025 Seoroofer. All rights reserved.
-    </p>
-  </footer>
+  </div> <!-- /.page-wrapper -->
 
   <!-- =========================
        SCRIPTS
