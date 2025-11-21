@@ -949,7 +949,6 @@ h2 {
     min-width: 0;
   }
 
-  /* "Growing" forced on 3rd line */
   .hero-heading {
     font-size: 36px;
     line-height: 60px;
@@ -993,7 +992,7 @@ h2 {
 
   .hero-right {
     margin-top: 14px;
-    margin-right: -30px;
+    margin-right: 0;          /* FIX: no overflow beyond contact button line */
     min-width: 0;
     display: flex;
     justify-content: flex-end;
@@ -1028,7 +1027,7 @@ h2 {
      ========================== */
 
   .we-understand-section {
-    padding: 80px 20px;
+    padding: 80px 50px;       /* FIX: 50px L/R to match navbar */
   }
 
   .we-understand-container {
@@ -1074,10 +1073,9 @@ h2 {
     bottom: -8px;
   }
 
-  /* paragraph text – standardized */
   .we-understand-intro {
     font-size: 15px;
-    line-height: 28px; /* unified */
+    line-height: 28px;
     margin-bottom: 18px;
     max-width: 640px;
   }
@@ -1086,7 +1084,6 @@ h2 {
     gap: 30px;
   }
 
-  /* bullet text – treat as paragraph text */
   .we-understand-list li {
     font-size: 15px;
     line-height: 28px;
@@ -1108,11 +1105,12 @@ h2 {
      ========================== */
 
   .our-services {
-    padding: 36px 32px;
+    padding: 36px 50px;       /* FIX: 50px L/R to match navbar */
   }
 
   .our-services-container {
     max-width: 1200px;
+    margin: 0 auto;
   }
 
   .our-services h2 {
@@ -1120,10 +1118,9 @@ h2 {
     margin-bottom: 12px;
   }
 
-  /* paragraph text – standardized */
   .sub-text {
     font-size: 15px;
-    line-height: 28px; /* unified */
+    line-height: 28px;
     margin-bottom: 40px;
   }
 
@@ -1148,10 +1145,9 @@ h2 {
     margin-bottom: 12px;
   }
 
-  /* card paragraph text – standardized */
   .service-card p {
-    font-size: 15px;       /* was 14px */
-    line-height: 28px;     /* was 24px */
+    font-size: 15px;
+    line-height: 28px;
     margin-bottom: 14px;
   }
 
@@ -1173,12 +1169,12 @@ h2 {
      ========================== */
 
   .why {
-    padding: 56px 20px;
+    padding: 56px 50px;       /* FIX: 50px L/R to match navbar */
   }
 
   .why__wrap {
     max-width: 1200px;
-    margin: 0 50px;
+    margin: 0 auto;           /* FIX: remove extra 50px side margin */
     gap: 32px;
   }
 
@@ -1194,10 +1190,9 @@ h2 {
     margin: 14px 0 10px;
   }
 
-  /* paragraph text – standardized */
   .why__lead {
     font-size: 15px;
-    line-height: 28px; /* was 30px */
+    line-height: 28px;
     margin-bottom: 18px;
     max-width: 620px;
   }
@@ -1214,7 +1209,6 @@ h2 {
     line-height: 28px;
   }
 
-  /* treat badge content as paragraph text */
   .badge__icon img {
     width: 34px;
     height: 34px;
@@ -1223,7 +1217,7 @@ h2 {
 
   .badge__content {
     font-size: 15px;
-    line-height: 28px; /* added for consistency */
+    line-height: 28px;
   }
 
   .why__art {
@@ -1238,6 +1232,7 @@ h2 {
 
   /* ==========================
      testimonial-section-1200px
+     (UNCHANGED AS REQUESTED)
      ========================== */
 
   .testimonial-section {
@@ -1274,10 +1269,9 @@ h2 {
     margin-bottom: 8px;
   }
 
-  /* testimonial paragraph text – standardized */
   .text {
     font-size: 15px;
-    line-height: 28px; /* was 26px */
+    line-height: 28px;
     margin-bottom: 16px;
   }
 
@@ -1305,7 +1299,7 @@ h2 {
      ========================== */
 
   .cta-section {
-    padding: 60px 20px;
+    padding: 60px 50px;       /* FIX: 50px L/R to match navbar */
   }
 
   .cta-content {
@@ -1324,10 +1318,9 @@ h2 {
     margin-top: 6px;
   }
 
-  /* CTA paragraph text – standardized */
   .cta-section p {
     font-size: 15px;
-    line-height: 28px; /* was 30px */
+    line-height: 28px;
     margin-bottom: 26px;
   }
 
@@ -1342,15 +1335,15 @@ h2 {
 
   /* ==========================
      footer-section-1200px
-     (typography unchanged)
      ========================== */
 
   .footer {
-    padding: 42px 60px 42px;
+    padding: 42px 50px 42px;  /* FIX: 50px L/R to match navbar */
   }
 
   .footer-container {
     max-width: 1200px;
+    margin: 0 auto;
     gap: 26px;
   }
 
@@ -1383,7 +1376,6 @@ h2 {
     font-size: 13px;
   }
 }
-
 
 
 /* =========================
