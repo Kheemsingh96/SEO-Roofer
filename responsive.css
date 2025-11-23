@@ -3385,3 +3385,166 @@
     font-size: 13px;
   }
 }
+
+
+
+
+ /* ************************** 
+ *************About Us ****************
+ * ************************** */
+
+/* =========================
+   About Section – Mobile (0–430px)
+   ========================= */
+@media (max-width: 430px) {
+
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  /* main container */
+  .about-container {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .about-left,
+  .about-right {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  /* text first, illustration bottom – same as design */
+  .about-left {
+    order: 1;
+  }
+
+  .about-right {
+    order: 2;
+  }
+
+  /* heading – center */
+  .about-heading {
+    font-size: 26px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  /* paragraph – center */
+  .about-desc {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #85193C;
+    max-width: 100%;
+    margin: 0 auto 22px;
+    text-align: center;
+  }
+
+  /* stats wrapper – 2 cards center */
+  .about-stats {
+    width: 100%;
+    padding-top: 16px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .about-stats::before {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+
+  /* text sizes */
+  .stat-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .stat-number {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .stat-icon img {
+    width: 53px;
+    height: 53px;
+    margin-top: 0;
+  }
+
+  /* =========================
+     DONO CARDS – SAME LAYOUT
+     TOP: ICON / NUMBER
+     BOTTOM: TEXT
+     ========================= */
+  .about-stats .stat-box {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 8px;
+  }
+
+  /* LEFT: Trophy + text (Award Winning Company) – default stack hi kaafi hai */
+
+  /* RIGHT: 2nd stat-box (3.2X) ko bhi trophy jaisa banao */
+  .about-stats .stat-box:nth-child(2) .stat-number {
+    margin-bottom: 4px;
+  }
+
+  /* 3.2X ke neeche Economical Growth text inject karo */
+  .about-stats .stat-box:nth-child(2)::after {
+    content: "Economical\A Growth";
+    white-space: pre;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #85193C;
+  }
+
+  /* Triangle wala 3rd box mobile pe chhupa do */
+  .about-stats .last-stat {
+    display: none !important;
+  }
+
+  /* Line + triangle sab hide */
+  .stat-line,
+  .triangle-icon,
+  .triangle-block,
+  .triangle,
+  .tringle,
+  .tringle-block,
+  .about-section [class*="triang"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* illustration full width at bottom */
+  .about-illustration {
+    max-width: 324px;
+    width: 100%;
+    margin: 10px auto 0;
+    display: block;
+  }
+
+  /* decorative elements off on small mobile */
+  .about-ring,
+  .about-curved-arrow {
+    display: none;
+  }
+}

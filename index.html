@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- =========================
-       DOCUMENT META
-  ========================== -->
+  <!-- =====================================================
+       META & GLOBAL STYLES
+  ====================================================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,14 +13,14 @@
 </head>
 <body>
 
-  <!-- =========================
-       PAGE WRAPPER (for desktop scaling)
-       ========================== -->
+  <!-- =====================================================
+       PAGE WRAPPER
+  ====================================================== -->
   <div class="page-wrapper">
 
-    <!-- =========================
+    <!-- =====================================================
          HEADER / NAVBAR
-    ========================== -->
+    ====================================================== -->
     <header class="navbar">
       <div class="logo">
         <img src="images/logo.png" alt="SEO Roofer Logo" />
@@ -29,7 +29,7 @@
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about us.html">About Us</a>
-        <a href="our services.html">Our Services</a>
+        <a href="our-services.html">Our Services</a>
         <a href="faq.html">FAQ</a>
         <a href="why choose.html">Why Choose Us</a>
       </nav>
@@ -41,10 +41,9 @@
       </button>
     </header>
 
-    <!-- =========================
-         TABLET / MOBILE SLIDE MENU
-         (Hamburger Navigation)
-    ========================== -->
+    <!-- =====================================================
+         MOBILE / TABLET SLIDE-OUT MENU
+    ====================================================== -->
     <div class="tablet-menu-overlay" id="tabletMenuOverlay"></div>
 
     <nav class="tablet-menu" id="tabletMenu" aria-label="Mobile navigation">
@@ -66,7 +65,8 @@
           </a>
         </li>
         <li>
-          <a href="our services.html">
+          <!-- BUG FIX: match desktop link → our-services.html -->
+          <a href="our-services.html">
             <img src="images/user-speak.png" alt="Our services" />
             Our Services
           </a>
@@ -92,9 +92,9 @@
       </ul>
     </nav>
 
-    <!-- =========================
+    <!-- =====================================================
          HERO SECTION
-    ========================== -->
+    ====================================================== -->
     <section class="hero">
       <div class="container">
         <!-- Hero Left: Text Content -->
@@ -142,9 +142,9 @@
       </div>
     </section>
 
-    <!-- =========================
-         WE UNDERSTAND YOU SECTION
-    ========================== -->
+    <!-- =====================================================
+         "WE UNDERSTAND YOU" SECTION
+    ====================================================== -->
     <section class="we-understand-section">
       <div class="we-understand-container">
         <!-- Left: Illustration + Decorative Elements -->
@@ -233,9 +233,9 @@
       </div>
     </section>
 
-    <!-- =========================
-         OUR SERVICES SECTION
-    ========================== -->
+    <!-- =====================================================
+         HOME PAGE – "OUR SERVICES" PREVIEW
+    ====================================================== -->
     <section class="our-services">
       <div class="our-services-container">
         <!-- Section Tag / Pill -->
@@ -303,9 +303,9 @@
       </div>
     </section>
 
-    <!-- =========================
+    <!-- =====================================================
          WHY CHOOSE US SECTION
-    ========================== -->
+    ====================================================== -->
     <section class="why">
       <div class="why__wrap">
         <!-- Left: Copy & Benefits -->
@@ -382,9 +382,9 @@
       </div>
     </section>
 
-    <!-- =========================
+    <!-- =====================================================
          TESTIMONIALS SECTION
-    ========================== -->
+    ====================================================== -->
     <section class="testimonial-section">
       <!-- Background Decorative Element -->
       <img
@@ -474,9 +474,9 @@
       </div>
     </section>
 
-    <!-- =========================
-         CTA (CALL TO ACTION) SECTION
-    ========================== -->
+    <!-- =====================================================
+         CALL-TO-ACTION (CTA) SECTION
+    ====================================================== -->
     <section class="cta-section">
       <div class="cta-content">
         <!-- CTA Heading -->
@@ -519,9 +519,9 @@
       </div>
     </section>
 
-    <!-- =========================
+    <!-- =====================================================
          FOOTER SECTION
-    ========================== -->
+    ====================================================== -->
     <footer class="footer">
       <div class="footer-container">
         <!-- Footer Left: Brand & Social -->
@@ -603,9 +603,9 @@
 
   </div> <!-- /.page-wrapper -->
 
-  <!-- =========================
+  <!-- =====================================================
        SCRIPTS
-  ========================== -->
+  ====================================================== -->
   <script src="script.js"></script>
 </body>
 </html>

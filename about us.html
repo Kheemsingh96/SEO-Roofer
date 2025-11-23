@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
-  <!-- HEADER / NAVBAR -->
   <header class="navbar">
     <div class="logo">
       <img src="images/logo.png" alt="SEO Roofer Logo" />
@@ -18,23 +17,22 @@
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about us.html">About Us</a>
-      <a href="our services.html">Our Services</a>
+      <a href="our-services.html">Our Services</a>
       <a href="faq.html">FAQ</a>
       <a href="why choose.html">Why Choose Us</a>
     </nav>
 
-    <a href="contact us.html" class="contact-btn">Contact Us</a>
+    <a href="contact-us.html" class="contact-btn">Contact Us</a>
 
-    <button class="hamburger-btn" aria-label="menu">
-      <img src="images/hamburger Tablet.png" alt="menu" />
+    <button class="hamburger-btn" type="button" aria-label="Open main menu">
+      <img src="images/hamburger Tablet.png" alt="Menu" />
     </button>
   </header>
 
-  <!-- TABLET / MOBILE SLIDE MENU -->
   <div class="tablet-menu-overlay" id="tabletMenuOverlay"></div>
 
   <nav class="tablet-menu" id="tabletMenu" aria-label="Mobile navigation">
-    <button class="tablet-menu-close" aria-label="Close menu">
+    <button class="tablet-menu-close" type="button" aria-label="Close menu">
       <img src="images/close.png" alt="Close menu" />
     </button>
 
@@ -52,7 +50,7 @@
         </a>
       </li>
       <li>
-        <a href="our services.html">
+        <a href="our-services.html">
           <img src="images/user-speak.png" alt="Our services" />
           Our Services
         </a>
@@ -78,7 +76,6 @@
     </ul>
   </nav>
 
-  <!-- ABOUT US BREADCRUMB -->
   <section class="about-hero">
     <div class="container">
       <h1 class="about-hero-title">About Us</h1>
@@ -90,246 +87,300 @@
           src="images/breadcrumb arrow.png.png"
           alt="Breadcrumb arrow"
           class="breadcrumb-arrow"
-        >
+        />
 
         <span class="breadcrumb-current">About Us</span>
       </div>
     </div>
   </section>
 
-  <!-- EXECUTIVES SECTION -->
-  <section class="executives-section">
-    <div class="container">
+  <section class="about-section">
+    <img src="images/red-circle-ring.png" alt="Ring Icon" class="about-ring about-ring-1">
+    <img src="images/marun-circle-ring.png" alt="Ring Icon" class="about-ring about-ring-2">
 
-      <div class="executives-layout">
-        <!-- LEFT CONTENT -->
-        <div class="executives-left">
-          <h2 class="executives-title">
-            Meet the executives<br>
-            driving our <span>SUCCESS</span>
-          </h2>
+    <img src="images/curved-loop-arrow.png"
+         alt="Curved Arrow" class="about-curved-arrow">
 
-          <p class="executives-text">
-            Businesses operate in various industries, including technology, finance, healthcare, retail,
-            and manufacturing, among others. They play a crucial role in the economy by providing goods,
-            services, and employment never trust up feature images.
-          </p>
+    <div class="about-container">
 
-          <!-- STATS ROW -->
-          <div class="executive-stats">
+      <div class="about-left">
+        <h2 class="about-heading">
+          Meet the executives <br>
+          driving our <span>SUCCESS</span>
+        </h2>
 
-            <!-- Trophy -->
-            <div class="stat-item">
-              <img
-                src="images/trophy.png"
-                alt="Trophy icon"
-                class="stat-icon stat-icon-trophy"
-              >
-              <p class="stat-heading">Award Winning<br>Company</p>
-            </div>
+        <p class="about-desc">
+          Businesses operate in various industries, including technology, finance,
+          healthcare, retail, and manufacturing, among others. They play a crucial
+          role in the economy by providing goods, services, and employment
+          never trust up feature images.
+        </p>
 
-            <!-- 3.8X TEXT -->
-            <div class="stat-item stat-item-big">
-              <h3>3.8 X</h3>
-            </div>
+        <div class="about-stats">
+          <div class="stat-box stat-award">
+            <span class="stat-icon">
+              <img src="images/trophy.png" alt="Trophy Icon">
+            </span>
+            <p class="stat-title">Award Winning <br> Company</p>
+          </div>
 
-            <!-- Growth arrows -->
-            <div class="stat-item stat-item-growth">
-              <p class="stat-heading">Economical<br>Growth</p>
-              <img
-                src="images/triangle-stack-upward.png"
-                alt="Growth arrows"
-                class="stat-icon stat-icon-growth"
-              >
-            </div>
+          <div class="stat-box stat-growth">
+            <p class="stat-number">3.2 X</p>
+            <p class="stat-title">Economical <br> Growth</p>
 
+            <span class="stat-line"></span>
+            <img src="images/triangle-stack-upward.png" alt="Arrow Icon" class="triangle-icon">
           </div>
         </div>
 
-        <!-- RIGHT MAIN ILLUSTRATION -->
-        <div class="executives-right">
-          <img
-            src="images/customer-support.png"
-            alt="Executives illustration"
-            class="executives-img"
-          >
-        </div>
+      </div>
 
-        <!-- DECOR ELEMENTS -->
-        <img
-          src="images/curved-loop-arrow.png"
-          alt=""
-          class="executives-decor decor-squiggle"
-        >
-
-        <img
-          src="images/red-circle-ring.png"
-          alt=""
-          class="executives-decor decor-top-circle"
-        >
-
-        <img
-          src="images/marun-circle-ring.png"
-          alt=""
-          class="executives-decor decor-bottom-circle"
-        >
+      <div class="about-right">
+        <img src="images/customer-support.png" alt="Customer Support" class="about-illustration">
       </div>
 
     </div>
   </section>
 
-  <!-- ABOUT EXPERTISE SECTION -->
-  <section class="about-expertise-section">
-    <div class="container about-expertise-layout">
+  <section class="seo-section">
+    <img src="images/paper-plane-dashed.png" alt="Decorative curve" class="seo-curve">
 
-      <!-- LEFT ILLUSTRATION -->
-      <div class="about-expertise-illustration">
-        <img
-          src="images/coder.png"
-          alt="Person working on laptop illustration"
-          class="about-expertise-image"
-        >
+    <div class="seo-container">
+      <div class="seo-left">
+        <img src="images/coder.png"
+             alt="Roofing SEO Expert" class="seo-illustration">
       </div>
 
-      <!-- RIGHT CONTENT -->
-      <div class="about-expertise-content">
+      <div class="seo-right">
+        <h2 class="seo-heading">Proven Roofing SEO Expertise</h2>
 
-        <!-- NEW TOP DECOR IMAGE -->
-        <img
-          src="images/paper-plane-dashed.png"
-          alt="Decorative element"
-          class="about-expertise-top-img"
-        >
+        <p class="seo-intro">
+          Our approach is transparent, results-driven, and built to deliver leads
+          Here’s what makes us your ideal SEO partner:.
+        </p>
 
-        <h2 class="about-expertise-title">
-          Proven Roofing SEO Expertise
+        <div class="seo-cards">
+          <article class="seo-card">
+            <div class="seo-card-icon-wrap">
+              <span class="seo-card-icon">
+                <img src="images/target-arrow.png"
+                     alt="Specialized SEO Icon">
+              </span>
+            </div>
+            <div class="seo-card-content">
+              <h3 class="seo-card-title">Specialized SEO for Roofers:</h3>
+              <p class="seo-card-text">
+                Our expertise is laser-focused on your industry. From local websites,
+                we can target them as to those terms like roofing services
+                (we receive you next high), in accordance with recent media.
+              </p>
+            </div>
+          </article>
+
+          <article class="seo-card">
+            <div class="seo-card-icon-wrap">
+              <span class="seo-card-icon">
+                <img src="images/puzzle.png"
+                     alt="Comprehensive SEO Icon">
+              </span>
+            </div>
+            <div class="seo-card-content">
+              <h3 class="seo-card-title">Comprehensive Roofing SEO Services:</h3>
+              <p class="seo-card-text">
+                Our strengths serve everything from on-page optimisation and
+                suggest we suitable to precise local SEO and optimized Google
+                Business realities.
+              </p>
+            </div>
+          </article>
+
+          <article class="seo-card">
+            <div class="seo-card-icon-wrap">
+              <span class="seo-card-icon">
+                <img src="images/chart-1.png"
+                     alt="Transparent and Effective Icon">
+              </span>
+            </div>
+            <div class="seo-card-content">
+              <h3 class="seo-card-title">Transparent and Effective:</h3>
+              <p class="seo-card-text">
+                We believe that our ongoing promises, our clients also win us
+                because our roofing SEO delivers tangible results—not because
+                they’re tied to long-term contracts.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands-section">
+    <div class="brands-container">
+
+      <div class="brands-header">
+        <h2 class="brands-heading">
+          Empowering Roofing Brands Through Precision SEO
         </h2>
 
-        <p class="about-expertise-subtitle">
-          Our approach is transparent, results-driven, and built to deliver leads.
-          Here’s what makes us your ideal SEO partner:
-        </p>
-
-        <!-- BENEFITS LIST -->
-        <div class="about-expertise-list">
-
-          <!-- CARD 1 -->
-          <article class="expertise-card">
-            <div class="expertise-card-icon-wrap">
-              <img
-                src="images/target-arrow.png"
-                alt="Specialized SEO icon"
-                class="expertise-card-icon"
-              >
-            </div>
-            <div class="expertise-card-text">
-              <h3 class="expertise-card-title">
-                Specialized SEO for Roofers:
-              </h3>
-              <p class="expertise-card-description">
-                Our expertise is laser-focused on your industry. From local websites,
-                we can target them as to those terms like roofing services in your
-                area, in accordance with recent media.
-              </p>
-            </div>
-          </article>
-
-          <!-- CARD 2 -->
-          <article class="expertise-card">
-            <div class="expertise-card-icon-wrap">
-              <img
-                src="images/puzzle.png"
-                alt="Comprehensive services icon"
-                class="expertise-card-icon"
-              >
-            </div>
-            <div class="expertise-card-text">
-              <h3 class="expertise-card-title">
-                Comprehensive Roofing SEO Services:
-              </h3>
-              <p class="expertise-card-description">
-                Our strengths serve everything from on-page optimisation and
-                suggest strategies suitable to precise local SEO and optimised
-                Google business realities.
-              </p>
-            </div>
-          </article>
-
-          <!-- CARD 3 -->
-          <article class="expertise-card">
-            <div class="expertise-card-icon-wrap">
-              <img
-                src="images/chart-1.png"
-                alt="Transparent and effective icon"
-                class="expertise-card-icon"
-              >
-            </div>
-            <div class="expertise-card-text">
-              <h3 class="expertise-card-title">
-                Transparent and Effective:
-              </h3>
-              <p class="expertise-card-description">
-                We believe that our ongoing promises help our clients win with us
-                because our roofing SEO delivers tangible, measurable results—not
-                because they’re tied to long-term contracts.
-              </p>
-            </div>
-          </article>
-
-        </div>
+        <img src="images/arrow-right-white.png"
+             alt="Decorative Arrow" class="brands-arrow">
       </div>
 
+      <div class="brands-cards">
+        <article class="brands-card">
+          <div class="brands-badge badge-1">
+            <span>01</span>
+          </div>
+
+          <h3 class="brands-card-title">Local SEO</h3>
+          <p class="brands-card-text">
+            Get discovered by homeowners searching for roofing services near them.
+            We optimize your local presence to boost visibility on Google Maps and
+            local search results.
+          </p>
+        </article>
+
+        <article class="brands-card">
+          <div class="brands-badge badge-2">
+            <span>02</span>
+          </div>
+
+          <h3 class="brands-card-title">Optimized Websites</h3>
+          <p class="brands-card-text">
+            Your website should work as hard as you do. We embrace on-page SEO,
+            speed, and content to turn visitors into real leads and clients.
+          </p>
+        </article>
+
+        <article class="brands-card">
+          <div class="brands-badge badge-3">
+            <span>03</span>
+          </div>
+
+          <h3 class="brands-card-title">Google Business</h3>
+          <p class="brands-card-text">
+            We fine-tune your Google Business Profile with the right categories,
+            reviews, and local signals—helping your roofing business stand out
+            and earn trust.
+          </p>
+        </article>
+      </div>
     </div>
   </section>
 
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>
+        Ready to Grow Your
+        <span>Roofing Business?</span>
+        <img
+          src="images/curved-line-3.png"
+          alt="underline"
+          class="underline-cta"
+        />
+      </h2>
 
-  <section class="about-services-section">
-  <div class="container">
+      <p>
+        Let’s get started with a Free Roofing SEO Audit, no strings attached.
+        We’ll show you exactly where your site stands and how to boost your leads.
+      </p>
 
-    <h2 class="services-heading">
-      Empowering Roofing Brands Through Precision SEO
-    </h2>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-main">
+          Claim My Free SEO Audit Now
+          <img
+            src="images/right-arrow.png"
+            alt="arrow"
+            class="btn-arrow"
+          />
+        </a>
 
-    <div class="services-cards">
-
-      <!-- CARD 01 -->
-      <div class="service-card">
-        <div class="service-badge">01</div>
-
-        <h3 class="service-title">Local SEO</h3>
-        <p class="service-text">
-          Get discovered by homeowners searching for roofing services near them.
-          We optimize your local presence to boost visibility on Google Maps and
-          local search results.
-        </p>
+        <a href="#" class="btn btn-outline">
+          <img
+            src="images/heroicons-solid-chat.png"
+            alt="chat"
+            class="btn-icon"
+          />
+          Contact Us
+        </a>
       </div>
-
-      <!-- CARD 02 -->
-      <div class="service-card">
-        <div class="service-badge">02</div>
-
-        <h3 class="service-title">Optimized Websites</h3>
-        <p class="service-text">
-          Your website should work as hard as you do. We improve on-page SEO,
-          speed, and content to convert visitors into real clients.
-        </p>
-      </div>
-
-      <!-- CARD 03 -->
-      <div class="service-card">
-        <div class="service-badge">03</div>
-
-        <h3 class="service-title">Google Business</h3>
-        <p class="service-text">
-          We fine-tune your Google Business Profile with the right categories,
-          reviews, and local signals so your roofing brand stands out.
-        </p>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img
+          src="images/logo-footer.png"
+          alt="SEO Roofer Logo"
+          class="footer-logo"
+        />
+        <p>
+          Real Teams. Real Results.<br />
+          Zero Freelancer Headaches.
+        </p>
+        <div class="social-icons">
+          <img src="images/fb.png" alt="Facebook" />
+          <img src="images/linkedin.png" alt="LinkedIn" />
+          <img src="images/youtube.png" alt="YouTube" />
+          <img src="images/x.png" alt="Twitter X" />
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <img
+          src="images/quicklinks.png.png"
+          alt="underline"
+          class="footer-underline"
+        />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Why Seorofer</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Services for Roofers</h4>
+        <img
+          src="images/Services.png.png"
+          alt="underline"
+          class="footer-underline"
+        />
+        <ul>
+          <li><a href="#">Search Engine Optimization (SEO)</a></li>
+          <li><a href="#">Pay-Per-Click (PPC)</a></li>
+          <li><a href="#">Social Media Management</a></li>
+          <li><a href="#">Website Design &amp; Development</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Trust &amp; Legal</h4>
+        <img
+          src="images/trust and legal.png.png"
+          alt="underline"
+          class="footer-underline"
+        />
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">DMCA</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+    <p class="copyright">
+      © 2025 Seoroofer. All rights reserved.
+    </p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

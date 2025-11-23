@@ -1141,16 +1141,16 @@ h2 {
 
 
 
+/* ===================================================================
+   ABOUT PAGE STYLES
+   - Hero / Breadcrumb
+   - About Content
+   =================================================================== */
+
+
 /* =========================
-   About US (Desktop)
+   Global Container
    ========================= */
-
-
-
-/* =========================
-   Breadcrumb ( Desktop )
-   ========================= */
-
 
 .container {
   max-width: 1440px;
@@ -1158,6 +1158,10 @@ h2 {
   padding: 0 24px;
 }
 
+
+/* =========================
+   About Hero + Breadcrumb
+   ========================= */
 
 .about-hero {
   background: linear-gradient(90deg, #85193C 0%, #1F060E 100%);
@@ -1198,429 +1202,1113 @@ h2 {
 }
 
 .breadcrumb-arrow {
-  width: 19px;    
-  height: 25px;   
+  width: 19px;
+  height: 25px;
   object-fit: contain;
   display: inline-block;
 }
 
+
 /* =========================
-   EXECUTIVES SECTION
-========================= */
+   About Main Section
+   ========================= */
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.executives-section {
-  padding: 30px 0;
+.about-section {
+  width: 100%;
   background: #F2E6E6;
+  padding: 60px 20px;
+  position: relative;
 }
 
-.executives-layout {
-  position: relative;
+.about-container {
+  max-width: 1440px;
+  margin: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
-/* LEFT SIDE */
-.executives-left {
-  flex: 1;
+.about-left {
+  flex: 1 1 600px;
 }
 
-.executives-title {
+.about-heading {
   font-size: 40px;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 1.3;
   color: #4A102A;
   margin-bottom: 20px;
 }
 
-.executives-text {
+.about-desc {
   font-size: 18px;
   line-height: 40px;
   color: #85193C;
-  max-width: 540px;
-  margin-bottom: 32px;
+  max-width: 550px;
+  margin-bottom: 35px;
 }
 
-/* STATS ROW */
-.executive-stats {
+.about-stats {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 50px;
-  padding-top: 18px;
-  border-top: 1px solid #85193C;
+  flex-wrap: nowrap;
+  padding-top: 24px;
+  margin-top: 10px;
 }
 
-.stat-item {
+.about-stats::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 630px;
+  height: 1.5px;
+  background: #85193C;
+}
+
+.stat-box {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  position: relative;
 }
 
-/* FIX: Economical → Growth layout */
-.stat-item-growth {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.stat-item-big h3 {
-  font-size: 50px;
-  font-weight: 600;
-  color: #A3183C;
-}
-
-/* COMMON ICON STYLE */
-.stat-icon {
-  display: block;
-  object-fit: contain;
-}
-
-/* Trophy icon size */
-.stat-icon-trophy {
+.stat-icon img {
   width: 68px;
   height: 68px;
-}
-
-/* FIX: Triangles SIZE CONTROL */
-.stat-icon-growth {
-  width: 36px ;  
-  height: auto ;
+  object-fit: contain;
   display: block;
+  margin-top: 4px;
 }
 
-.stat-heading {
+.stat-title {
   font-size: 20px;
-  line-height: 1.4;
+  font-weight: 500;
   color: #85193C;
+  line-height: 30px;
 }
 
-.executives-right {
-  flex: 1;
+.stat-number {
+  font-size: 50px;
+  font-weight: 700;
+  color: #85193C;
+  line-height: 50px;
+  margin-right: 35px;
+}
+
+.last-stat {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
 }
 
-.executives-img {
-  max-width: 610px;
-  width: 100%;
-  top: 10%;
-  height: auto;
-}
-
-/* DECORATIVE */
-.executives-decor {
-  position: absolute;
+.triangle-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
   display: block;
+  margin-bottom: 6px;
+}
+
+.about-right {
+  flex: 1 1 500px;
+  text-align: right;
+}
+
+.about-illustration {
+  width: 100%;
+  max-width: 629px;
+  height: auto;
+  display: inline-block;
+}
+
+.about-ring {
+  position: absolute;
+  width: 16px;
+  height: 16px;
   object-fit: contain;
 }
 
-.decor-squiggle {
-  width: 40px;
-  height: auto;
-  top: -1px;
-  left: 50%;
+.about-ring-1 {
+  top: 28px;
+  right: 80px;
 }
 
-.decor-top-circle {
-  width: 16px;
-  height: 16px;
-  top: -10px;
-  right: 10px;
-}
-
-.decor-bottom-circle {
-  width: 14px;
-  height: 14px;
-  bottom: -2%;
+.about-ring-2 {
+  bottom: 40px;
   left: 30%;
   transform: translateX(-50%);
 }
 
-
-.about-expertise-top-img {
-  width: 90px;
-  height: 160px;
-  display: block;
+.about-curved-arrow {
   position: absolute;
-  top: -110px;
-  right: 80px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-35%);
+  width: 40px;
+  height: auto;
+  object-fit: contain;
 }
 
-/* ===============  ABOUT EXPERTISE SECTION  =============== */
 
-.container {
+/* =========================
+   About Section – Responsive
+   ========================= */
+
+@media (max-width: 980px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-right {
+    text-align: center;
+  }
+
+  .about-heading {
+    font-size: 30px;
+  }
+
+  .about-stats {
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .about-stats::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .last-stat {
+    align-items: center;
+  }
+
+  .about-curved-arrow {
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-heading {
+    font-size: 26px;
+  }
+
+  .stat-number {
+    font-size: 28px;
+    margin-right: 20px;
+  }
+
+  .triangle-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
+/* ===================================================================
+   SEO SECTION (ABOUT PAGE)
+   - Illustration + Content Cards
+   =================================================================== */
+
+.seo-section {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.seo-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 24px;
-  box-sizing: border-box;
-}
-
-.about-expertise-section {
-  padding: 40px 0; 
-  background-color: #ffffff;
-  color: #1f1f1f;
-}
-
-.about-expertise-layout {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 120px;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
-.about-expertise-illustration {
-  flex: 0 0 45%;
+.seo-left {
+  flex: 1 1 520px;
 }
 
-.about-expertise-image {
+.seo-illustration {
   width: 100%;
-  max-width: 530px;
+  max-width: 520px;
+  height: auto;
   display: block;
 }
 
-.about-expertise-content {
-  flex: 0 0 55%;
-  position: relative;
-  padding-top: 0; /* Balanced spacing */
+.seo-right {
+  flex: 1 1 520px;
 }
 
-.about-expertise-title {
+.seo-heading {
   font-size: 40px;
   font-weight: 600;
   color: #4A102A;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
-.about-expertise-subtitle {
+.seo-intro {
   font-size: 18px;
-  max-width: 654px;
   line-height: 40px;
   color: #85193C;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
-.about-expertise-list {
+.seo-cards {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.expertise-card {
-  width: 100%;
-  max-width: 650px;
+.seo-card {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  padding: 18px 20px;
+  padding: 18px 22px;
   border-radius: 10px;
-  background-color: #ffffff;
-  border: 1px solid #D3D3D3;
-  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #F0E2E5;
 }
 
-.expertise-card-icon-wrap {
-  flex: 0 0 56px;
+.seo-card-icon-wrap {
+  flex-shrink: 0;
+}
+
+.seo-card-icon {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-color: #85193C;
-  display: flex;
+  background: #85193C;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-.expertise-card-icon {
-  width: 35px;
-  height: 35px;
+.seo-card-icon img {
+  width: 32px;
+  height: 32px;
   object-fit: contain;
+  display: block;
 }
 
-.expertise-card-text {
+.seo-card-content {
   flex: 1;
 }
 
-.expertise-card-title {
+.seo-card-title {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: #4A102A;
   margin-bottom: 6px;
 }
 
-.expertise-card-description {
+.seo-card-text {
   font-size: 16px;
   line-height: 30px;
   color: #85193C;
 }
 
-@media (max-width: 900px) {
-  .about-expertise-layout {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
+.seo-curve {
+  position: absolute;
+  top: -40px;
+  right: 60px;
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* =========================
+   SEO Section – Responsive
+   ========================= */
+
+@media (max-width: 1100px) {
+  .seo-container {
     gap: 40px;
   }
 
-  .about-expertise-illustration,
-  .about-expertise-content {
-    flex: 0 0 100%;
+  .seo-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .seo-section {
+    padding: 60px 24px;
   }
 
-  .about-expertise-title {
-    text-align: left;
+  .seo-container {
+    flex-direction: column;
   }
 
-  .expertise-card {
-    max-width: 100%;
+  .seo-right {
+    order: 2;
   }
 
-  .about-expertise-top-img {
-    right: 0;
+  .seo-left {
+    order: 1;
+    text-align: center;
+  }
+
+  .seo-illustration {
+    margin: 0 auto;
+  }
+
+  .seo-curve {
+    right: 24px;
+    width: 110px;
+  }
+}
+
+@media (max-width: 600px) {
+  .seo-section {
+    padding: 50px 16px;
+  }
+
+  .seo-heading {
+    font-size: 24px;
+  }
+
+  .seo-card {
+    padding: 16px 16px;
   }
 }
 
 
-/* =========================
-   CONTAINER
-========================= */
-.container {
-  max-width: 1250px;
+
+/* ===================================================================
+   BRANDS SECTION
+   - Brand Highlight Cards
+   =================================================================== */
+
+.brands-section {
+  width: 100%;
+  padding: 70px 20px 80px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    180deg,
+    #1F060E 0%,
+    #541026 40%,
+    #85193C 100%
+  );
+}
+
+.brands-container {
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 24px;
 }
 
-/* =========================
-   SECTION BACKGROUND
-========================= */
-.about-precision-seo {
-  padding: 90px 0 110px;
-  background: linear-gradient(180deg, #4c0024 0%, #9a0037 45%, #c23b57 100%);
-  color: #fff;
+.brands-header {
+  position: relative;
   text-align: center;
-  position: relative;
+  margin-bottom: px;
 }
 
-/* =========================
-   HEADING
-========================= */
-.precision-heading {
-  font-family: "Poppins", sans-serif;
-  font-size: 32px;
+.brands-heading {
+  font-size: 40px;
   font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 70px;
-  max-width: 780px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+  color: #ffffff;
 }
 
-/* OPTIONAL — arrow icon at right side */
-.precision-heading::after {
-  content: "";
+.brands-arrow {
   position: absolute;
-  right: -40px;
-  top: 5px;
-  width: 38px;
-  height: 38px;
-  background: url("images/arrow-icon.svg") no-repeat center/contain;
+  top: 80%;
+  right: 10%;
+  transform: translateY(-60%);
+  width: 50px;
+  height: auto;
+  object-fit: contain;
 }
 
-/* =========================
-   CARD LAYOUT
-========================= */
-.precision-cards {
+.brands-cards {
   display: flex;
   justify-content: center;
-  gap: 34px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 
-/* =========================
-   CARD BOX
-========================= */
-.precision-card {
+.brands-card {
   position: relative;
-  width: 355px;
   background: #ffffff;
-  border-radius: 22px;
-  padding: 58px 32px 40px;
+  border-radius: 20px;
+  padding: 40px 30px 32px;
+  max-width: 404px;
+  width: 100%;
   text-align: left;
-  box-shadow: 0px 26px 55px rgba(0,0,0,0.18);
 }
 
-/* =========================
-   NUMBER BADGE
-========================= */
-.precision-badge {
+.brands-badge {
   position: absolute;
-  top: -42px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 82px;
-  height: 82px;
-  background: #e02836;
+  top: -24px;
+  right: -10px;
+  width: 78px;
+  height: 78px;
   border-radius: 50%;
-  border: 7px solid #fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow: 0px 12px 35px rgba(0,0,0,0.45);
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* semi-circle dark shadow bottom */
-.precision-badge::after {
+.brands-badge::before {
   content: "";
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 64px;
-  height: 26px;
-  background: rgba(0, 0, 0, 0.35);
-  border-radius: 0 0 40px 40px;
-  z-index: -1;
+  height: 64px;
+  border-radius: 50%;
+  background: #C5172E;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 }
 
-.precision-badge-number {
-  font-family: "Poppins", sans-serif;
+.brands-badge span {
+  position: absolute;
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
 }
 
-/* =========================
-   CARD TEXT
-========================= */
-.precision-card-title {
-  font-size: 22px;
+.brands-card-title {
+  font-size: 28px;
   font-weight: 600;
+  color: #4A102A;
+  margin-top: 6px;
   margin-bottom: 12px;
-  color: #1f1f1f;
 }
 
-.precision-card-text {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #555;
+.brands-card-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #85193C;
 }
+
 
 /* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 900px) {
-  .precision-card {
-    width: 100%;
+   Brands Section – Responsive
+   ========================= */
+
+@media (max-width: 1100px) {
+  .brands-heading {
+    font-size: 28px;
+  }
+
+  .brands-arrow {
+    right: 10%;
+    width: 80px;
+  }
+
+  .brands-cards {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands-section {
+    padding: 60px 16px 70px;
+  }
+
+  .brands-heading {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .brands-header {
+    margin-bottom: 50px;
+  }
+
+  .brands-arrow {
+    right: 30px;
+    width: 70px;
+    top: 60%;
+  }
+
+  .brands-card {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-heading {
+    font-size: 22px;
+  }
+
+  .brands-badge {
+    width: 68px;
+    height: 68px;
+    top: -20px;
+    right: 20px;
+  }
+
+  .brands-badge::before {
+    width: 54px;
+    height: 54px;
+  }
+
+  .brands-arrow {
+    right: 20px;
+    width: 60px;
+  }
+}
+
+
+
+/* ===================================================================
+   SERVICES PAGE – INTRO SECTION
+   - Services Overview Grid
+   =================================================================== */
+
+.service-intro {
+  width: 100%;
+  background: #ffffff;
+  padding: 70px 40px 80px;
+  box-sizing: border-box;
+}
+
+.service-intro-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.service-intro-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 24px;
+  margin-bottom: 50px;
+}
+
+.service-intro-heading-wrap {
+  text-align: center;
+}
+
+.service-intro-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #4A102A;
+  margin-bottom: 10px;
+}
+
+.service-intro-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #85193C;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.service-intro-decor {
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.service-intro-decor-left {
+  justify-self: start;
+  width: 57px;
+  height: 57px;
+  margin-top: 10px;
+}
+
+.service-intro-decor-right {
+  justify-self: end;
+  width: 42px;
+  height: 42px;
+  margin-top: -50px;
+}
+
+.service-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.service-intro-card {
+  background: #F2E6E6;
+  border-radius: 12px;
+  padding: 34px 24px;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+  color: #292A2E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-intro-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4A102A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60px;
+  margin-bottom: 16px;
+}
+
+.service-intro-card-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 18px;
+}
+
+.service-intro-card-icon {
+  display: block;
+  height: auto;
+}
+
+.service-intro-card-1 .service-intro-card-icon { width: 87px; }
+.service-intro-card-2 .service-intro-card-icon { width: 96px; }
+.service-intro-card-3 .service-intro-card-icon { width: 57px; }
+.service-intro-card-4 .service-intro-card-icon { width: 81px; }
+
+.service-intro-card-text {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #4A102A;
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+  min-height: 210px;
+}
+
+
+/* =========================
+   Services Intro – Responsive
+   ========================= */
+
+@media (max-width: 1100px) {
+  .service-intro {
+    padding: 60px 30px 70px;
+  }
+
+  .service-intro-title {
+    font-size: 32px;
+  }
+
+  .service-intro-subtitle {
+    font-size: 16px;
+  }
+
+  .service-intro-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-intro {
+    padding: 50px 20px 60px;
+  }
+
+  .service-intro-header {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 16px;
+  }
+
+  .service-intro-decor {
+    display: none;
+  }
+
+  .service-intro-title {
+    font-size: 26px;
+  }
+
+  .service-intro-subtitle {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .service-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-intro-card {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-intro {
+    padding: 40px 16px 50px;
+  }
+
+  .service-intro-title {
+    font-size: 22px;
+  }
+
+  .service-intro-card-text {
+    font-size: 14px;
+    line-height: 26px;
+    min-height: 190px;
+  }
+}
+
+
+
+/* ===================================================================
+   WHY SEO ROOFERS SECTION
+   - Key Benefits Grid
+   =================================================================== */
+
+.why-seo {
+  background: linear-gradient(
+    315deg,
+    #85193C 0%,
+    #591128 50%,
+    #1F060E 100%
+  );
+  color: #ffffff;
+  padding: 30px 40px 40px;
+  box-sizing: border-box;
+}
+
+.why-seo-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.why-seo-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.why-seo-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.why-seo-decor {
+  position: absolute;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.why-seo-decor-curve {
+  width: 96px;
+  top: -110px;
+  left: 66%;
+  transform: translateX(-50%);
+}
+
+.why-seo-decor-burst {
+  width: 82px;
+  height: 82px;
+  top: -18px;
+  right: 20px;
+}
+
+.why-seo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 540px));
+  column-gap: 120px;
+  row-gap: 52px;
+  justify-content: center;
+  justify-items: start;
+}
+
+.why-seo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  text-align: left;
+  width: 100%;
+  max-width: 540px;
+}
+
+.why-seo-icon {
+  display: block;
+  height: auto;
+  object-fit: contain;
+}
+
+.why-seo-item:nth-child(1) .why-seo-icon {
+  width: 60px;
+}
+
+.why-seo-item:nth-child(2) .why-seo-icon {
+  width: 70px;
+}
+
+.why-seo-item:nth-child(3) .why-seo-icon {
+  width: 70px;
+}
+
+.why-seo-item:nth-child(4) .why-seo-icon {
+  width: 62px;
+}
+
+.why-seo-text {
+  text-align: left;
+}
+
+.why-seo-item-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.why-seo-item-desc {
+  font-size: 18px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+
+/* =========================
+   Why SEO Section – Responsive
+   ========================= */
+
+@media (max-width: 1024px) {
+  .why-seo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-seo {
+    padding: 50px 20px 70px;
+  }
+
+  .why-seo-title {
+    font-size: 26px;
+  }
+
+  .why-seo-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .why-seo-item {
     max-width: 420px;
   }
 
-  .precision-heading::after {
+  .why-seo-decor-curve,
+  .why-seo-decor-burst {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-seo-title {
+    font-size: 22px;
+  }
+
+  .why-seo-item-title {
+    font-size: 20px;
+  }
+
+  .why-seo-item-desc {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+
+/* =========================
+   FAQ Hero + Breadcrumb
+   ========================= */
+
+.faq {
+  background: linear-gradient(90deg, #85193C 0%, #1F060E 100%);
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.faq .container {
+  text-align: center;
+}
+
+.faq .about-hero-title {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.faq .breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.faq .breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.faq .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.faq .breadcrumb-current {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.faq .breadcrumb-arrow {
+  width: 19px;
+  height: 25px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+
+/* =========================
+   FAQ Section
+   ========================= */
+
+.faq-section {
+  background: #ffffff;
+  padding: 40px 40px 80px;
+}
+
+.faq-container {
+  max-width: 1440px;
+  margin: 0 40px;
+  position: relative; /* rings ke liye */
+}
+
+/* ========= Decorative Rings ========= */
+
+/* Single ring — bottom-left */
+.faq-decor-left {
+  position: absolute;
+  width: 20px;
+  bottom: -550px;
+  left: 25px;
+  opacity: 0.9;
+  pointer-events: none;
+  object-fit: contain;
+  z-index: 0;
+}
+
+/* Double ring — top-right */
+.faq-decor-right {
+  position: absolute;
+  width: 36px;
+  top: 280px;
+  right: 15px;
+  opacity: 0.95;
+  pointer-events: none;
+  object-fit: contain;
+  z-index: 0;
+}
+
+/* list wrapper */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* FAQ card */
+.faq-item {
+  background: linear-gradient(90deg, #F2E6E6 0%, #FFFFFF 100%);
+  border-radius: 15px;
+  padding: 16px 22px;
+  overflow: hidden;
+}
+
+/* remove default marker */
+.faq-item summary {
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+
+/* summary row */
+.faq-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-size: 26px;
+  font-weight: 600;
+  color: #4A102A;
+}
+
+/* arrow icon */
+.faq-toggle-icon img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.25s ease;
+}
+.faq-item[open] .faq-toggle-icon img {
+  transform: rotate(180deg);
+}
+
+/* answer text */
+.faq-content {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e3d1d7;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000;
+}
+
+.faq-content ul {
+  margin-top: 6px;
+  padding-left: 20px;
+}
+.faq-content li {
+  margin-bottom: 4px;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+  .faq-section { padding: 30px 20px 60px; }
+
+  .faq-question { font-size: 20px; }
+
+  .faq-content {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  /* Hide rings on mobile */
+  .faq-decor-left,
+  .faq-decor-right {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 24px 16px 50px;
   }
 }
