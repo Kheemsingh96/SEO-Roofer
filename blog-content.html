@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================
+       DOCUMENT META
+  ========================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <!-- =========================
+       HEADER / NAVBAR
+  ========================== -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="SEO Roofer Logo" />
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about us.html">About Us</a>
+      <a href="our-services.html">Our Services</a>
+      <a href="faq.html">FAQ</a>
+      <a href="why choose.html">Why Choose Us</a>
+    </nav>
+
+    <a href="contact us.html" class="contact-btn">Contact Us</a>
+
+    <button class="hamburger-btn" aria-label="menu">
+      <img src="images/hamburger Tablet.png" alt="menu" />
+    </button>
+  </header>
+
+  <!-- =========================
+       TABLET / MOBILE SLIDE MENU
+       (Hamburger Navigation)
+  ========================== -->
+  <div class="tablet-menu-overlay" id="tabletMenuOverlay"></div>
+
+  <nav class="tablet-menu" id="tabletMenu" aria-label="Mobile navigation">
+    <button class="tablet-menu-close" aria-label="Close menu">
+      <img src="images/close.png" alt="Close menu" />
+    </button>
+
+    <ul class="tablet-menu-list">
+      <li>
+        <a href="index.html">
+          <img src="images/home-icon.png" alt="Home" />
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="about us.html">
+          <img src="images/info-circle.png" alt="About us" />
+          About us
+        </a>
+      </li>
+      <li>
+        <a href="our-services.html">
+          <img src="images/user-speak.png" alt="Our services" />
+          Our Services
+        </a>
+      </li>
+      <li>
+        <a href="faq.html">
+          <img src="images/question-circle.png" alt="FAQ" />
+          FAQ
+        </a>
+      </li>
+      <li>
+        <a href="why choose.html">
+          <img src="images/archive-minimalistic.png" alt="Why Choose us" />
+          Why Choose us
+        </a>
+      </li>
+      <li>
+        <a href="contact us.html">
+          <img src="images/phone-calling.png" alt="Contact us" />
+          Contact us
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- =========================
+       Blog Breadcrumb
+  ========================== -->
+  <section class="Blog">
+    <div class="container">
+      <h1 class="about-hero-title">Blog</h1>
+
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <img
+          src="images/breadcrumb arrow.png.png"
+          alt="Breadcrumb arrow"
+          class="breadcrumb-arrow"
+        />
+        <span class="breadcrumb-current">Blog</span>
+      </div>
+    </div>
+  </section>
+
+
+<!-- This is single blog section Start -->
+<section class="single-blog-section">
+  <div class="wrapper">
+    <div class="blog-div">
+      <div class="blog-leftdiv">
+        <div class="blog-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            facilisi. Phasellus at luctus sem. Donec vulputate, ligula in
+            efficitur laoreet, nunc orci varius enim, id pulvinar urna
+            augue sed neque. Curabitur porta, arcu in efficitur tincidunt,
+            libero arcu fermentum mi, nec rhoncus justo urna sed nulla.
+            Pellentesque ac lorem sed nisi posuere consequat. In eu neque
+            vitae metus malesuada tincidunt. Vestibulum vel mauris a sem
+            vehicula tristique. Morbi interdum, ipsum nec luctus sodales,
+            justo nulla pretium massa, ac iaculis ex eros ac nunc. Donec
+            lobortis, sapien vel porttitor feugiat, sapien ante blandit
+            nulla, sed efficitur nisl felis in mi.
+          </p>
+          <h2 id="title-1">
+            This is a H2 Heading text This is a H2 Heading text This is a
+            H2 Heading text
+          </h2>
+          <p>
+            This is normal paragraph loreum ipsum simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an
+            unknown printer. This is Bold Text
+          </p>
+          <img src="images/demo-img-1.jpg" alt="demo-img-1" />
+
+          <!-- ✅ Pehle numbering -->
+          <ol>
+            <li>This is Numbering</li>
+            <li>This is Numbering</li>
+          </ol>
+          <!-- ✅ Uske baad tick bullet list -->
+          <ul class="mb-0">
+            <li>This is Bullet point</li>
+            <li>This is Bullet point</li>
+          </ul>
+
+          <h2 id="title-2">
+            This is a H2 Heading text This is a H2 Heading text This is a
+            H2 Heading text
+          </h2>
+          <p>
+            This is normal paragraph loreum ipsum simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an
+            unknown printer. This is Bold Text
+          </p>
+
+          <!-- ✅ Pehle numbering -->
+          <ol>
+            <li>This is Numbering</li>
+            <li>This is Numbering</li>
+          </ol>
+          <!-- ✅ Uske baad tick bullet list -->
+          <ul class="mb-0">
+            <li>This is Bullet point</li>
+            <li>This is Bullet point</li>
+          </ul>
+
+          <!-- 2nd image -->
+          <img src="images/demo-img-1.jpg" alt="demo-img-1" />
+
+          <!-- ✅ NEW HIGHLIGHTED HEADING / PARAGRAPH BLOCK -->
+          <div class="highlight-box">
+            <p>
+              The point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here, content
+              here', making it look like read-able English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text.
+            </p>
+          </div>
+
+          <h2 id="title-3">
+            This is a H2 Heading text This is a H2 Heading text This is a
+            H2 Heading text
+          </h2>
+          <p>
+            This is normal paragraph loreum ipsum simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an
+            unknown printer. This is Bold Text
+          </p>
+          <h3 id="sub-title-1">
+            This is a H3 Heading text This is a H3 Heading text This is a
+            H3 Heading text
+          </h3>
+          <p>
+            This is normal paragraph loreum ipsum simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an
+            unknown printer. This is Bold Text
+          </p>
+          <h3 id="sub-title-2">
+            This is a H3 Heading text This is a H3 Heading text This is a
+            H3 Heading text
+          </h3>
+          <p>
+            This is normal paragraph loreum ipsum simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an
+            unknown printer. This is Bold Text
+          </p>
+          <h2 id="title-4">
+            This is a H2 Heading text This is a H2 Heading text This is a
+            H2 Heading text
+          </h2>
+          <p>
+            This is normal paragraph loreum ipsum simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an
+            unknown printer. This is Bold Text
+          </p>
+          <h2 id="title-5">
+            This is a H2 Heading text This is a H2 Heading text This is a
+            H2 Heading text
+          </h2>
+          <p>
+            This is normal paragraph loreum ipsum simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an
+            unknown printer. This is Bold Text
+          </p>
+        </div>
+
+        <div class="faq-title" id="faq">Frequently Asked Question</div>
+        <div class="faqlis">
+          <div class="faqs">
+            <div class="text-1">What is Lorem Ipsum?</div>
+            <div class="text-2">
+              Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry.
+            </div>
+          </div>
+          <div class="faqs">
+            <div class="text-1">Why do we use it?</div>
+            <div class="text-2">
+              It is a long established fact that a reader will be
+              distracted by the readable content.
+            </div>
+          </div>
+          <div class="faqs">
+            <div class="text-1">Where does it come from?</div>
+            <div class="text-2">
+              Contrary to popular belief, Lorem Ipsum is not simply random
+              text.
+            </div>
+          </div>
+          <div class="faqs">
+            <div class="text-1">Is Lorem Ipsum safe to use?</div>
+            <div class="text-2">
+              Yes, it is used as placeholder content and does not affect
+              your final layout or code.
+            </div>
+          </div>
+          <div class="faqs">
+            <div class="text-1">
+              Can I use Lorem Ipsum for my project?
+            </div>
+            <div class="text-2">
+              Absolutely! It's a standard tool in design and publishing
+              for layout testing.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-sidebar">
+        <div class="blog-box">
+          <h3 class="title">Our Services</h3>
+          <div class="services-box">
+            <div class="link">
+              Search Engine Optimization (SEO)
+            </div>
+            <div class="link">Pay-Per-Click (PPC)</div>
+            <div class="link">Social Media Management</div>
+            <div class="link">Website Design & Development</div>
+          </div>
+        </div>
+
+        <div class="blog-box">
+          <h3 class="title">Content</h3>
+          <ol class="lists">
+            <li>
+              <a href="#top-title">5 SEO Tips for Roofing Websites</a>
+            </li>
+            <li>
+              <a href="#title-1">
+                This is a H2 Heading text This is a H2 Heading text This
+                is a H2 Heading text
+              </a>
+            </li>
+            <li>
+              <a href="#title-2">
+                This is a H2 Heading text This is a H2 Heading text This
+                is a H2 Heading text
+              </a>
+            </li>
+            <li>
+              <a href="#title-3">
+                This is a H2 Heading text This is a H2 Heading text This
+                is a H2 Heading text
+              </a>
+              <ol>
+                <li>
+                  <a href="#sub-title-2">
+                    This is a H3 Heading text This is a H3 Heading text
+                    This is a H3 Heading text
+                  </a>
+                </li>
+                <li>
+                  <a href="#sub-title-2">
+                    This is a H3 Heading text This is a H3 Heading text
+                    This is a H3 Heading text
+                  </a>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <a href="#title-4">
+                This is a H2 Heading text This is a H2 Heading text This
+                is a H2 Heading text
+              </a>
+            </li>
+            <li>
+              <a href="#title-5">
+                This is a H2 Heading text This is a H2 Heading text This
+                is a H2 Heading text
+              </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- This is single blog section End -->
+
+
+  <!-- =====================================================
+         CALL-TO-ACTION (CTA) SECTION
+    ====================================================== -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <!-- CTA Heading -->
+        <h2>
+          Ready to Grow Your
+          <span>Roofing Business?</span>
+          <img
+            src="images/curved-line-3.png"
+            alt="underline"
+            class="underline-cta"
+          />
+        </h2>
+
+        <!-- CTA Description -->
+        <p>
+          Let’s get started with a Free Roofing SEO Audit, no strings attached.
+          We’ll show you exactly where your site stands and how to boost your leads.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-main">
+            Claim My Free SEO Audit Now
+            <img
+              src="images/right-arrow.png"
+              alt="arrow"
+              class="btn-arrow"
+            />
+          </a>
+
+          <a href="contact us.html" class="btn btn-outline">
+            <img
+              src="images/heroicons-solid-chat.png"
+              alt="chat"
+              class="btn-icon"
+            />
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER SECTION
+    ====================================================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Footer Left: Brand & Social -->
+        <div class="footer-left">
+          <img
+            src="images/logo-footer.png"
+            alt="SEO Roofer Logo"
+            class="footer-logo"
+          />
+          <p>
+            Real Teams. Real Results.<br />
+            Zero Freelancer Headaches.
+          </p>
+          <div class="social-icons">
+            <img src="images/fb.png" alt="Facebook" />
+            <img src="images/linkedin.png" alt="LinkedIn" />
+            <img src="images/youtube.png" alt="YouTube" />
+            <img src="images/x.png" alt="Twitter X" />
+          </div>
+        </div>
+
+        <!-- Footer Column: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <img
+            src="images/quicklinks.png.png"
+            alt="underline"
+            class="footer-underline"
+          />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-services.html">Services</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="why choose.html">Why Seorofer</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column: Services -->
+        <div class="footer-links">
+          <h4>Services for Roofers</h4>
+          <img
+            src="images/Services.png.png"
+            alt="underline"
+            class="footer-underline"
+          />
+          <ul>
+            <li><a href="#">Search Engine Optimization (SEO)</a></li>
+            <li><a href="#">Pay-Per-Click (PPC)</a></li>
+            <li><a href="#">Social Media Management</a></li>
+            <li><a href="#">Website Design &amp; Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column: Trust & Legal -->
+        <div class="footer-links">
+          <h4>Trust &amp; Legal</h4>
+          <img
+            src="images/trust and legal.png.png"
+            alt="underline"
+            class="footer-underline"
+          />
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">DMCA</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <hr />
+      <p class="copyright">
+        © 2025 Seoroofer. All rights reserved.
+      </p>
+    </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
