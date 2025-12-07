@@ -2139,34 +2139,15 @@ h2 {
   margin-bottom: 4px;
 }
 
-.faq .breadcrumb {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 20px;
-  font-weight: 400;
-}
 
-.faq .breadcrumb a {
-  color: #ffffff;
-  text-decoration: none;
-}
 
-.faq .breadcrumb a:hover {
-  text-decoration: underline;
-}
 
-.faq .breadcrumb-current {
-  font-weight: 500;
-  color: #ffffff;
-}
 
-.faq .breadcrumb-arrow {
-  width: 19px;
-  height: 25px;
-  object-fit: contain;
-  display: inline-block;
-}
+
+
+
+
+
 
 
 
@@ -2175,7 +2156,7 @@ h2 {
 
 .faq-section {
   background: #ffffff;
-  padding: 40px 40px 80px;
+  padding: 40px 20px 80px;
 }
 
 .faq-container {
@@ -2265,7 +2246,7 @@ h2 {
   border-top: 1px solid #e3d1d7;
   font-size: 18px;
   line-height: 40px;
-  color: #000;
+  color: #4A102A;
 }
 
 .faq-content ul {
@@ -2324,34 +2305,15 @@ h2 {
   margin-bottom: 4px;
 }
 
-.why-choose-us .breadcrumb {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 20px;
-  font-weight: 400;
-}
 
-.why-choose-us .breadcrumb a {
-  color: #ffffff;
-  text-decoration: none;
-}
 
-.why-choose-us .breadcrumb a:hover {
-  text-decoration: underline;
-}
 
-.why-choose-us .breadcrumb-current {
-  font-weight: 500;
-  color: #ffffff;
-}
 
-.why-choose-us .breadcrumb-arrow {
-  width: 19px;
-  height: 25px;
-  object-fit: contain;
-  display: inline-block;
-}
+
+
+
+
+
 
 
 /* =========================
@@ -2994,34 +2956,15 @@ h2 {
   margin-bottom: 4px;
 }
 
-.contact-us .breadcrumb {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 20px;
-  font-weight: 400;
-}
 
-.contact-us .breadcrumb a {
-  color: #ffffff;
-  text-decoration: none;
-}
 
-.contact-us .breadcrumb a:hover {
-  text-decoration: underline;
-}
 
-.contact-us .breadcrumb-current {
-  font-weight: 500;
-  color: #ffffff;
-}
 
-.contact-us .breadcrumb-arrow {
-  width: 19px;
-  height: 25px;
-  object-fit: contain;
-  display: inline-block;
-}
+
+
+
+
+
 
 
 
@@ -3262,34 +3205,15 @@ h2 {
   margin-bottom: 4px;
 }
 
-.privacy-policy .breadcrumb {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 20px;
-  font-weight: 400;
-}
 
-.privacy-policy .breadcrumb a {
-  color: #ffffff;
-  text-decoration: none;
-}
 
-.privacy-policy .breadcrumb a:hover {
-  text-decoration: underline;
-}
 
-.privacy-policy .breadcrumb-current {
-  font-weight: 500;
-  color: #ffffff;
-}
 
-.privacy-policy .breadcrumb-arrow {
-  width: 19px;
-  height: 25px;
-  object-fit: contain;
-  display: inline-block;
-}
+
+
+
+
+
 
 
 
@@ -3416,34 +3340,15 @@ h2 {
   margin-bottom: 4px;
 }
 
-.Blog .breadcrumb {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 20px;
-  font-weight: 400;
-}
 
-.Blog .breadcrumb a {
-  color: #ffffff;
-  text-decoration: none;
-}
 
-.Blog .breadcrumb a:hover {
-  text-decoration: underline;
-}
 
-.Blog .breadcrumb-current {
-  font-weight: 500;
-  color: #ffffff;
-}
 
-.Blog .breadcrumb-arrow {
-  width: 19px;
-  height: 25px;
-  object-fit: contain;
-  display: inline-block;
-}
+
+
+
+
+
 
 
 

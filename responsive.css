@@ -5166,19 +5166,20 @@
   margin: 0 auto 20px;
 }
 
-/* Cards wrapper */
+/* Cards wrapper: GRID for equal height without fixed height */
 .seo-cards {
   order: 4;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;   /* single column */
+  grid-auto-rows: 1fr;         /* all rows same height (tallest card) */
   gap: 16px;
 }
 
 /* Single card */
 .seo-card {
   width: 100%;
-  height: 390px;
+  /* height: 390px;  HATA DIYA */
   padding: 18px 16px;
   display: flex;
   gap: 12px;
@@ -5189,7 +5190,6 @@
   flex-shrink: 0;
 }
 
-
 .seo-card-icon {
   width: 50px;          
   height: 50px;          
@@ -5199,7 +5199,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .seo-card-icon img {
   width: 30px;          
@@ -5226,8 +5225,7 @@
   line-height: 120%;
 }
 
-
-  .seo-curve {
+.seo-curve {
   display: none !important;
 }
 
@@ -5244,85 +5242,92 @@
 }
 
 
+
 /* ******About Us 3 Section */
 
 
  .brands-section {
-    padding: 20px 20px 40px;
-    text-align: center;
-  }
+  padding: 20px 20px 40px;
+  text-align: center;
+}
 
-  .brands-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-  }
+.brands-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
 
-  .brands-header {
-    width: 100%;
-  }
+.brands-header {
+  width: 100%;
+}
 
-  .brands-heading {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 41px;
-    margin-bottom: 6px;
-  }
+.brands-heading {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 41px;
+  margin-bottom: 6px;
+}
 
-  .brands-arrow {
-    width: 32px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+.brands-arrow {
+  width: 32px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
-  .brands-cards {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
+/* Grid Layout */
+.brands-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
 
-  .brands-card {
-    position: relative;
-    width: 100%;
-    padding: 22px 18px;
-    border-radius: 16px;
-    text-align: left;
-  }
+.brands-card {
+  position: relative;
+  width: 100%;
+  padding: 40px 18px 22px;     
+  border-radius: 16px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 
-  .brands-badge {
-    position: absolute;
-    top: -18px;     
-    right: -10px;    
+  height: 260px;              
+  overflow: visible;           
+}
 
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
+/* Badge */
+.brands-badge {
+  position: absolute;
+  top: -18px;
+  right: -10px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.brands-badge span {
+  font-size: 18px;
+  font-weight: 600;
+}
 
-  .brands-badge span {
-    font-size: 18px;
-    font-weight: 600;
-  }
+.brands-card-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 6px;
+}
 
-  .brands-card-title {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 28px;
-    margin-bottom: 6px;
-  }
+.brands-card-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
 
-  .brands-card-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-  }
 }
 
 
@@ -5560,7 +5565,6 @@
   max-width: 280px;
   font-weight: 600;
   line-height: 46px;
-  
 }
 
 /* Paragraph */
@@ -5582,19 +5586,19 @@
   margin: 0 auto 20px;
 }
 
-/* Cards wrapper */
+
 .seo-cards {
   order: 4;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;   
+  grid-auto-rows: 1fr;        
   gap: 26px;
 }
 
 /* Single card */
 .seo-card {
   width: 100%;
-  height: 270px;
   padding: 18px 16px;
   display: flex;
   gap: 12px;
@@ -5605,7 +5609,6 @@
   flex-shrink: 0;
 }
 
-
 .seo-card-icon {
   width: 52px;          
   height: 52px;          
@@ -5615,7 +5618,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .seo-card-icon img {
   width: 32px;          
@@ -5642,8 +5644,7 @@
   line-height: 120%;
 }
 
-
-  .seo-curve {
+.seo-curve {
   display: none !important;
 }
 
@@ -5660,94 +5661,3539 @@
 }
 
 
+
 /* ******About Us 3 Section */
 
 
-.brands-section {
-    padding: 20px 20px 40px;
-    text-align: center;
-    overflow: visible !important;
+ .brands-section {
+  padding: 20px 20px 40px;
+  text-align: center;
+  overflow: visible;
+}
+
+.brands-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  overflow: visible;
+}
+
+.brands-header {
+  width: 100%;
+}
+
+.brands-heading {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 41px;
+  margin-bottom: 6px;
+}
+
+.brands-arrow {
+  width: 32px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.brands-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow: visible;
+}
+
+/* Single card */
+.brands-card {
+  position: relative;
+  width: 100%;
+  padding: 36px 18px 22px;     
+  border-radius: 16px;
+  text-align: left;
+  box-sizing: border-box;
+  overflow: visible;
+
+  display: flex;
+  flex-direction: column;
+  height: 260px;                
+}
+
+/* Circle badge */
+.brands-badge {
+  position: absolute;
+  top: -16px;
+  right: -12px;
+  left: auto;
+
+  width: 56px;
+  height: 56px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+
+  padding: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.brands-badge span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.brands-card-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 6px;
+}
+
+.brands-card-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+}
+
+
+
+
+/* =========================
+   About Section – Tablet (576px - 768px)
+   ========================= */
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+  .about-section {
+    padding: 20px 40px 100px; 
+    position: relative;
   }
 
-  .brands-container {
+  .about-container {
+    max-width: 640px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
-    overflow: visible !important;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .about-left {
+    flex: 1 1 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  .about-right {
+    flex: 1 1 100%;
+    text-align: center;
+    order: 2;
+  }
+
+  .about-heading {
+    font-size: 30px;
+    line-height: 55px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .about-desc {
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #85193C;
+    max-width: 520px;
+    margin: 0 auto 28px;
+  }
+
+
+  .about-stats {
+    width: 100%;
+    padding-top: 16px;
+    margin-top: 16px;
+    margin-bottom: 60px; 
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    column-gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+  }
+
+  .about-stats::before {
+    content: none !important;
+  }
+
+  .about-stats .stat-box {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* LEFT BLOCK */
+  .about-stats .stat-award {
+    grid-column: 1;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 12px;
+    justify-self: flex-start;
+    text-align: left;
+  }
+
+  .about-stats .stat-award .stat-title {
+    font-size: 22px;
+    line-height: 1.4;
+    max-width: 260px;
+    margin: 0;
+  }
+
+  .stat-icon img {
+    width: 56px;
+    height: 56px;
+  }
+
+
+  .about-stats .stat-growth {
+    display: contents;
+  }
+
+  .about-stats .stat-growth .stat-number {
+    grid-column: 2;
+    justify-self: center;
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .about-stats .stat-growth .stat-title {
+    grid-column: 3;
+    justify-self: flex-start;
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: left;
+    margin: 0;
+  }
+
+
+  /* Remove triangles */
+  .stat-line,
+  .triangle-icon {
+    display: none !important;
+  }
+
+  .about-curved-arrow {
+    position: absolute;
+    display: block;
+    width: 56px;
+    height: auto;
+    left: 40px;         
+    top: 53%;
+    transform: translateY(-50%);
+  }
+
+  
+  .about-ring-1 {
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 14px;
+    right: 40px;         
+    top: 60%;
+    transform: translateY(-50%);
+  }
+
+  .about-ring-2 {
+    display: none !important;
+  }
+
+
+  /* Illustration proper gap */
+  .about-illustration {
+    max-width: 650px;
+    width: 100%;
+    margin: 20px auto 0; 
+}
+
+
+/* ******About Us 2nd Section******* */
+
+
+.seo-section {
+  padding-top: 30px;    
+  padding-bottom: 40px; 
+}
+
+.seo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  gap: 40px;
+}
+
+.seo-right {
+  display: contents;
+}
+
+.seo-left,
+.seo-heading,
+.seo-intro,
+.seo-cards {
+  width: 100%;
+}
+
+.seo-heading {
+  order: 1;
+  font-size: 30px;
+  line-height: 50px;
+  margin: 0;
+  margin-bottom: -15px;
+}
+
+.seo-intro {
+  order: 2;
+  font-size: 22px;
+  max-width: 624px;
+  line-height: 40px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.seo-left {
+  order: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.seo-illustration {
+  width: 100%;
+  max-width: 613px;
+  height: auto;
+  display: block;
+}
+
+.seo-curve {
+  position: absolute;
+  pointer-events: none;
+  top: -50px;
+  right: 30px;
+  width: 80px;
+  height: auto;
+}
+
+.seo-cards {
+  order: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  align-items: stretch;
+}
+
+.seo-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 12px;
+  min-height: 240px;
+  background: #ffffff;
+  border: 1px solid #D3D3D3;
+  text-align: left;
+}
+
+.seo-card-icon-wrap {
+  flex: 0 0 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seo-card-title {
+  font-size: 26px;
+  margin: 0 0 6px;
+}
+
+.seo-card-text {
+  font-size: 20px;
+  line-height: 40px;
+  margin: 0;
+}
+
+
+
+
+/* ***********About us 3 Section*********** */
+
+ .brands-section {
+  padding: 40px 40px 80px;
+  text-align: center;
+  overflow: visible;
+}
+
+.brands-container {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  overflow: visible;
+}
+
+.brands-header {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.brands-heading {
+  font-size: 30px;
+  max-width: 584px;
+  font-weight: 600;
+  line-height: 55px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brands-arrow {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 25%;
+  left: 102%;
+  transform: translate(-50%, 10px);
+}
+
+.brands-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  overflow: visible;
+}
+
+.brands-card {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 22px 24px;
+  border-radius: 18px;
+  text-align: left;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 260px; 
+}
+
+.brands-badge {
+  position: absolute;
+  top: -20px;
+  right: -18px;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  background: #C11247;
+  border: 4px solid #ffffff;
+
+  outline: none;
+  box-shadow: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands-badge::before,
+.brands-badge::after {
+  content: none;
+}
+
+.brands-badge span {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.brands-card-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.brands-card-text {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+
+}
+
+
+/* =========================
+   About Section – Tablet (769px - 1024px)
+   ========================= */
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .about-section {
+    padding: 20px 40px 100px; 
+    position: relative;
+  }
+
+  .about-container {
+    max-width: 948px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .about-left {
+    flex: 1 1 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  .about-right {
+    flex: 1 1 100%;
+    text-align: center;
+    order: 2;
+  }
+
+  .about-heading {
+    font-size: 34px;
+    line-height: 60px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .about-desc {
+    font-size: 23px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #85193C;
+    max-width: 750px;
+    margin: 0 auto 28px;
+  }
+
+  .about-stats {
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 16px;
+    margin-bottom: 60px; 
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    column-gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+  }
+
+  .about-stats::before {
+    content: none !important;
+  }
+
+  .about-stats .stat-box {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-stats .stat-award {
+    grid-column: 1;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 35px;
+    justify-self: flex-start;
+    text-align: left;
+  }
+
+  .about-stats .stat-award .stat-title {
+    font-size: 28px;
+    line-height: 1.4;
+    max-width: 260px;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .stat-icon img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .about-stats .stat-growth {
+    display: contents;
+  }
+
+  .about-stats .stat-growth .stat-number {
+    grid-column: 2;
+    justify-self: center;
+    font-size: 58px;
+    line-height: 1.1;
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .about-stats .stat-growth .stat-title {
+    grid-column: 3;
+    justify-self: flex-start;
+    font-size: 28px;
+    line-height: 1.4;
+    text-align: left;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .stat-line,
+  .triangle-icon {
+    display: none !important;
+  }
+
+  .about-curved-arrow {
+    position: absolute;
+    display: block;
+    width: 64px;
+    height: auto;
+    left: 40px;         
+    top: 53%;
+    transform: translateY(-50%);
+  }
+
+  .about-ring-1 {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    right: 40px;         
+    top: 60%;
+    transform: translateY(-50%);
+  }
+
+  .about-ring-2 {
+    display: none !important;
+  }
+
+  .about-illustration {
+    max-width: 750px;
+    width: 100%;
+    margin: 20px auto 0; 
+  }
+
+
+  /* ******About Us 2nd Section******* */
+
+  .seo-section {
+    padding-top: 40px;    
+    padding-bottom: 50px; 
+  }
+
+  .seo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 48px;
+  }
+
+  .seo-right {
+    display: contents;
+  }
+
+  .seo-left,
+  .seo-heading,
+  .seo-intro,
+  .seo-cards {
+    width: 100%;
+  }
+
+  .seo-heading {
+    order: 1;
+    font-size: 34px;
+    line-height: 58px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: -20px;
+  }
+
+  .seo-intro {
+    order: 2;
+    font-size: 23px;
+    max-width: 624px;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+
+  .seo-left {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  .seo-illustration {
+    width: 100%;
+    max-width: 670px;
+    height: auto;
+    display: block;
+  }
+
+  .seo-curve {
+    position: absolute;
+    pointer-events: none;
+    top: -58px;
+    right: 120px;
+    width: 90px;
+    height: auto;
+  }
+
+  .seo-cards {
+    order: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
+  }
+
+  .seo-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px;
+    border-radius: 18px;
+    min-height: 260px;
+    background: #ffffff;
+    border: 1px solid #D3D3D3;
+    text-align: left;
+  }
+
+  .seo-card-icon-wrap {
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seo-card-title {
+    font-size: 28px;
+    margin: 0 0 8px;
+    font-weight: 600;
+  }
+
+  .seo-card-text {
+    font-size: 23px;
+    line-height: 40px;
+    margin: 0;
+    font-weight: 500;
+  }
+
+
+  /* ***********About us 3 Section*********** */
+
+  .brands-section {
+    padding: 50px 40px 90px;
+    text-align: center;
+    overflow: visible;
+  }
+
+  .brands-container {
+    max-width: 948px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    overflow: visible;
   }
 
   .brands-header {
     width: 100%;
+    text-align: center;
+    position: relative;
   }
 
   .brands-heading {
-    font-size: 27px;
+    font-size: 34px;
+    max-width: 980px;
     font-weight: 600;
-    line-height: 41px;
-    margin-bottom: 6px;
+    line-height: 58px;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .brands-arrow {
-    width: 32px;
+    width: 48px;
     height: auto;
-    display: block;
-    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    left: 101%;
+    transform: translate(-50%, 10px);
   }
 
   .brands-cards {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    overflow: visible !important;
+    gap: 56px;
+    overflow: visible;
   }
 
   .brands-card {
-    position: relative !important;
+    position: relative;
     width: 100%;
-    padding: 22px 18px;
-    border-radius: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 36px 24px 26px;
+    border-radius: 20px;
     text-align: left;
     box-sizing: border-box;
-    overflow: visible !important;   /* circle kabhi cut nahi hoga */
+    display: flex;
+    flex-direction: column;
+    height: 320px;
   }
 
-  /* CIRCLE – FORCE FIX */
   .brands-badge {
-    position: absolute !important;
-
-    /* card ke top-right corner par anchor */
-    top: 0 !important;
-    right: 0 !important;
-    left: auto !important;
-    transform: translate(50%, -50%) !important;
-
-    width: 56px !important;
-    height: 56px !important;
-    border-radius: 50% !important;
-
+    position: absolute;
+    top: -22px;
+    right: -20px;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: #C11247;
+    border: 4px solid #ffffff;
+    outline: none;
+    box-shadow: none;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  .brands-badge::before,
+  .brands-badge::after {
+    content: none;
+  }
+
   .brands-badge span {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1;
+  }
+
+  .brands-card-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 18px;
+  }
+
+  .brands-card-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+}
+
+
+/* =========================
+   About Section – Desktop (1025px - 1360px)
+   ========================= */
+
+
+@media (min-width: 1025px) and (max-width: 1360px) {
+
+  /* About hero (top strip) */
+  .about-hero {
+    padding: 40px 0;
+  }
+
+  .about-hero .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .about-hero-title {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .breadcrumb {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+
+
+  .about-section {
+    padding: 20px 50px;
+}
+
+.about-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+
+.about-left {
+    flex: 1 1 50%;
+    text-align: left;
+}
+
+.about-right {
+    flex: 1 1 50%;
+    text-align: right;
+}
+
+.about-heading {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.about-desc {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.about-stats {
+    padding-top: 0px;
+    margin-top: 0px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.about-stats::before {
+    width: 540px;
+    height: 1px;
+}
+
+.stat-box {
+    display: flex;
+    align-items: center;
+}
+
+.stat-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.stat-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.stat-number {
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+.about-stats .stat-award {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-stats .stat-award .stat-title {
+    text-align: left;
+    white-space: normal;
+    display: inline-block;
+    min-width: 125px;
+}
+
+.about-stats .stat-growth {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: auto;
+}
+
+.about-stats .stat-growth .stat-number {
+    white-space: nowrap;
+    margin-right: 28px;
+}
+
+.about-stats .stat-growth .stat-title {
+    text-align: left;
+}
+
+.triangle-icon {
+    width: 90px;
+    height: 90px;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.about-illustration {
+    max-width: 540px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.about-ring {
+    width: 14px;
+    height: 14px;
+}
+
+/* THE ONLY FIX YOU ASKED FOR */
+.about-ring.about-ring-2 {
+    bottom: 10px !important;   
+}
+
+
+  /* About section 3 – SEO explainer */
+  .seo-section {
+    padding: 20px 40px;
+  }
+
+  .seo-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: nowrap;
+  }
+
+  .seo-left {
+    flex: 1 1 50%;
+  }
+
+  .seo-right {
+    flex: 1 1 50%;
+  }
+
+  .seo-illustration {
+    max-width: 480px;
+    width: 100%;
+  }
+
+  .seo-heading {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  .seo-intro {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    max-width: 560px;
+    margin-bottom: 22px;
+  }
+
+  .seo-cards {
+    gap: 20px;
+  }
+
+  .seo-card {
+    padding: 16px 20px;
+    border-radius: 12px;
+  }
+
+  .seo-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .seo-card-text {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+
+  .seo-curve {
+    top: -36px;
+    right: 50px;
+    width: 70px;
+    height: auto;
+  }
+
+
+.brands-section {
+  padding: 20px 40px 50px;
+}
+
+.brands-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.brands-header {
+  margin-bottom: 70px;
+}
+
+.brands-heading {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  
+}
+
+.brands-arrow {
+  width: 44px;
+  height: auto;
+}
+
+
+.brands-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: nowrap;         
+}
+
+.brands-card {
+  flex: 1 1 calc(33.33% - 50px);  
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 22px 24px;
+  border-radius: 20px;
+}
+
+.brands-badge {
+  width: 72px;
+  height: 72px;
+}
+
+.brands-badge span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.brands-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.brands-card-text {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+}
+
+
+/* =========================
+   About Section – Desktop (1361px - 1439px)
+   ========================= */
+
+   @media (min-width: 1361px) and (max-width: 1439px) {
+
+/* ======================================================
+   ABOUT HERO
+====================================================== */
+
+.about-hero {
+  padding: 50px 0;
+}
+
+.about-hero .container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.about-hero-title {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.breadcrumb {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+/* ======================================================
+   ABOUT SECTION
+====================================================== */
+
+.about-section {
+  padding: 50px 60px;
+}
+
+.about-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.about-left,
+.about-right {
+  flex: 1 1 50%;
+}
+
+.about-heading {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.about-desc {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  max-width: 560px;
+  margin-bottom: 32px;
+}
+
+.about-stats {
+  padding-top: 0;
+  margin-top: 0;
+  gap: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.about-stats::before {
+  width: 560px;
+  height: 1px;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+}
+
+.stat-icon img {
+  width: 64px;
+  height: 64px;
+}
+
+.stat-title {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.stat-number {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.about-stats .stat-award {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-stats .stat-award .stat-title {
+  min-width: 130px;
+}
+
+.about-stats .stat-growth {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.about-stats .stat-growth .stat-number {
+  margin-right: 30px;
+  white-space: nowrap;
+}
+
+.triangle-icon {
+  width: 96px;
+  height: 96px;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+.about-illustration {
+  max-width: 580px;
+  width: 100%;
+  height: auto;
+}
+
+.about-ring {
+  width: 16px;
+  height: 16px;
+}
+
+.about-ring.about-ring-2 {
+  bottom: 10px !important;
+}
+
+.about-curved-arrow {
+  width: 52px;
+  height: auto;
+}
+
+
+
+/* ======================================================
+   SEO SECTION
+====================================================== */
+
+.seo-section {
+  padding: 30px 60px;
+}
+
+.seo-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: nowrap;
+}
+
+.seo-left,
+.seo-right {
+  flex: 1 1 50%;
+}
+
+.seo-illustration {
+  max-width: 520px;
+  width: 100%;
+}
+
+.seo-heading {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.seo-intro {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  max-width: 600px;
+  margin-bottom: 26px;
+}
+
+.seo-cards {
+  gap: 22px;
+}
+
+.seo-card {
+  padding: 20px 24px;
+  border-radius: 14px;
+}
+
+.seo-card-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.seo-card-text {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.seo-curve {
+  top: -40px;
+  right: 60px;
+  width: 80px;
+}
+
+
+
+/* ======================================================
+   BRANDS SECTION
+====================================================== */
+
+.brands-section {
+  padding: 30px 60px 70px;
+}
+
+.brands-container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.brands-header {
+  margin-bottom: 70px;
+}
+
+.brands-heading {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+.brands-arrow {
+  width: 50px;
+  height: auto;
+}
+
+.brands-cards {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: nowrap;
+}
+
+.brands-card {
+  flex: 1 1 calc(33.33% - 60px);
+  max-width: 420px;
+  width: 100%;
+  padding: 34px 26px 26px;
+  border-radius: 20px;
+}
+
+.brands-badge {
+  width: 78px;
+  height: 78px;
+}
+
+.brands-badge span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.brands-card-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.brands-card-text {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+}
+
+
+/* =========================
+   About Section – Desktop (1550px - 1920px)
+   ========================= */
+@media (min-width: 1550px) and (max-width: 1920px) {
+
+  .about-hero {
+    padding: 70px 0;
+  }
+
+  .about-hero .container {
+    max-width: 1850px;
+    margin: 0 auto;
+    padding: 0 80px;
+    text-align: center;
+  }
+
+  .about-hero-title {
+    font-size: 52px;
+    line-height: 72px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .breadcrumb {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
     font-size: 18px;
+    font-weight: 400;
+  }
+
+  /* ===============================
+     ABOUT SECTION
+  =============================== */
+
+  .about-section {
+    padding: 80px 80px;
+  }
+
+  .about-container {
+    max-width: 1850px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    flex-wrap: nowrap;
+  }
+
+  .about-left {
+    flex: 1 1 50%;
+    text-align: left;
+  }
+
+  .about-right {
+    flex: 1 1 50%;
+    text-align: right;
+  }
+
+  .about-heading {
+    font-size: 46px;
+    line-height: 66px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .about-desc {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    max-width: 720px;
+    margin-bottom: 40px;
+  }
+
+  .about-stats {
+    padding-top: 10px;
+    margin-top: 10px;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .about-stats::before {
+    width: 720px;
+    height: 1px;
+  }
+
+  .stat-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .stat-icon img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .stat-title {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+  }
+
+  .stat-number {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 700;
+  }
+
+  .about-stats .stat-award {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .about-stats .stat-award .stat-title {
+    text-align: left;
+    white-space: normal;
+    display: inline-block;
+    min-width: 170px;
+  }
+
+  .about-stats .stat-growth {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+  }
+
+  .about-stats .stat-growth .stat-number {
+    white-space: nowrap;
+    margin-right: 36px;
+  }
+
+  .about-stats .stat-growth .stat-title {
+    text-align: left;
+  }
+
+  .triangle-icon {
+    width: 120px;
+    height: 120px;
+    margin-left: -14px;
+    margin-top: 16px;
+  }
+
+  .about-illustration {
+    max-width: 720px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .about-ring {
+    width: 20px;
+    height: 20px;
+  }
+
+  .about-ring.about-ring-2 {
+    bottom: 14px !important;
+  }
+
+  .about-curved-arrow {
+    width: 68px;
+    height: auto;
+  }
+
+  /* ===============================
+     SEO SECTION
+  =============================== */
+
+  .seo-section {
+    padding: 45px 80px;
+  }
+
+  .seo-container {
+    max-width: 1850px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    flex-wrap: nowrap;
+  }
+
+  .seo-left {
+    flex: 1 1 50%;
+  }
+
+  .seo-right {
+    flex: 1 1 50%;
+  }
+
+  .seo-illustration {
+    max-width: 720px;
+    width: 100%;
+  }
+
+  .seo-heading {
+    font-size: 46px;
+    line-height: 66px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .seo-intro {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    max-width: 780px;
+    margin-bottom: 32px;
+  }
+
+  .seo-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .seo-card {
+    padding: 26px 30px;
+    border-radius: 18px;
+  }
+
+  .seo-card-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .seo-card-text {
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 500;
+  }
+
+  .seo-curve {
+    top: -50px;
+    right: 80px;
+    width: 100px;
+    height: auto;
+  }
+
+  /* ===============================
+     BRANDS SECTION
+  =============================== */
+
+  .brands-section {
+    padding: 50px 80px 100px;
+  }
+
+  .brands-container {
+    max-width: 1850px;
+    margin: 0 auto;
+  }
+
+  .brands-header {
+    margin-bottom: 90px;
+  }
+
+  .brands-heading {
+    font-size: 46px;
+    line-height: 66px;
+    font-weight: 600;
+  }
+
+  .brands-arrow {
+    width: 70px;
+    height: auto;
+  }
+
+  .brands-cards {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: nowrap;
+  }
+
+  .brands-card {
+    flex: 1 1 calc(33.33% - 70px);
+    max-width: 520px;
+    width: 100%;
+    padding: 40px 28px 34px;
+    border-radius: 24px;
+  }
+
+  /* badge size tuned down so outer circle isn't huge */
+  .brands-badge {
+    width: 88px;   /* smaller than 96 but bigger than 78 */
+    height: 88px;
+  }
+
+  .brands-badge::before {
+    width: 72px;   /* inner "shadow" circle */
+    height: 72px;
+  }
+
+  .brands-badge span {
+    font-size: 24px;
     font-weight: 600;
   }
 
   .brands-card-title {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 600;
-    line-height: 28px;
-    margin-bottom: 6px;
+    margin-bottom: 14px;
   }
 
   .brands-card-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 500;
   }
+}
+
+
+
+/* ============================================
+               Our SERVICES PAGE 
+   ============================================ */
+
+
+
+
+/* ============================================
+     Our  SERVICES PAGE – 0 to 430px ONLY
+   ============================================ */
+
+@media (max-width: 430px) {
+
+  /* ========= SECTION 1 – SERVICES INTRO ========= */
+
+  .service-intro {
+    padding: 20px 16px 50px;
+  }
+
+  .service-intro-container {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .service-intro-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;         
+    text-align: center;
+  }
+
+
+  .service-intro-decor-left,
+  .service-intro-decor-right {
+    display: block;
+    object-fit: contain;
+  }
+
+  .service-intro-decor-left {
+    width: 40px;         
+    height: 40px;
+    align-self: flex-start;
+    margin-left: 350px;       
+    margin-top: -18px;
+  }
+
+  .service-intro-decor-right {
+    width: 30px;         
+    height: 30px;
+    align-self: flex-end;
+    margin-right: 350px;      
+    margin-top: 4px;
+  }
+
+  .service-intro-title {
+    font-size: 26px;     
+    line-height: 41px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .service-intro-subtitle {
+    font-size: 20px;      
+    line-height: 35px;
+    font-weight: 500;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .service-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;           
+    margin-top: 30px;
+  }
+
+  .service-intro-card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 26px 20px;   
+    border-radius: 16px;
+  }
+
+  .service-intro-card-icon-wrap {
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .service-intro-card-title {
+    font-size: 20px;      
+    line-height: normal;
+    font-weight: 500;
+    min-height: auto;
+    margin-bottom: 10px;
+  }
+
+  .service-intro-card-text {
+    font-size: 18px;    
+    line-height: 30px;
+    font-weight: 500;
+    max-width: 100%;
+    min-height: auto;
+  }
+
+
+  /* ========= SECTION 2 – WHY SEO WORKS ========= */
+
+  .why-seo {
+    padding: 10px 16px 40px;
+  }
+
+  .why-seo-container {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .why-seo-header {
+    position: relative;     
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .why-seo-title {
+    font-size: 26px;       
+    line-height: 41px;
+    font-weight: 600;
+  }
+
+  .why-seo-decor-curve {
+    display: block !important;
+    position: absolute;
+    width: 50px;            
+    top: -50px;             
+    left: 340px;            
+    object-fit: contain;
+    pointer-events: none;
+  }
+
+
+  .why-seo-decor-burst {
+    display: none !important;
+  }
+
+  .why-seo-grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;          
+  }
+
+  .why-seo-item {
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  .why-seo-item-title {
+    font-size: 20px;        
+    line-height: normal;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .why-seo-item-desc {
+    font-size: 18px;         
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  /* Small text / links */
+  .why-seo a,
+  .service-intro a {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+  }
+}
+
+
+/* ============================================
+     Our  SERVICES PAGE – 431px to 575px ONLY
+   ============================================ */
+
+   @media (min-width: 431px) and (max-width: 575px) {
+
+  /* ========= SECTION 1 – SERVICES INTRO ========= */
+
+  .service-intro {
+    padding: 0px 20px 60px;
+  }
+
+  .service-intro-container {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+
+  .service-intro-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    text-align: center;
+  }
+
+  .service-intro-decor-left,
+  .service-intro-decor-right {
+    display: block;
+    object-fit: contain;
+  }
+
+  .service-intro-decor-left {
+    width: 44px;         
+    height: 44px;
+    align-self: flex-start;
+    margin-left: 430px;  
+    margin-top: 10px;
+  }
+
+  .service-intro-decor-right {
+    width: 34px;         
+    height: 34px;
+    align-self: flex-end;
+    margin-right: 440px; 
+    margin-top: 4px;
+  }
+
+  .service-intro-title {
+    font-size: 27px;    
+    line-height: 44px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .service-intro-subtitle {
+    font-size: 18px;    
+    line-height: 32px;
+    font-weight: 500;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .service-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .service-intro-card {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 28px 22px; 
+    border-radius: 18px;
+  }
+
+  .service-intro-card-icon-wrap {
+    height: auto;
+    margin-bottom: 18px;
+  }
+
+  .service-intro-card-title {
+    font-size: 21px;     
+    line-height: normal;
+    font-weight: 500;
+    min-height: auto;
+    margin-bottom: 10px;
+  }
+
+  .service-intro-card-text {
+    font-size: 18px;     
+    line-height: 32px;
+    font-weight: 500;
+    max-width: 100%;
+    min-height: auto;
+  }
+
+
+  /* ========= SECTION 2 – WHY SEO WORKS ========= */
+
+  .why-seo {
+    padding: 10px 20px 45px;
+  }
+
+  .why-seo-container {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+
+  .why-seo-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .why-seo-title {
+    font-size: 27px;     
+    line-height: 44px;
+    font-weight: 600;
+  }
+
+  .why-seo-decor-curve {
+    display: block !important;
+    position: absolute;
+    width: 70px;         
+    top: -75px;
+    left: 390px;         
+    object-fit: contain;
+    pointer-events: none;
+  }
+
+  .why-seo-decor-burst {
+    display: none !important;
+  }
+
+  .why-seo-grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+  }
+
+  .why-seo-item {
+    max-width: 430px;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  .why-seo-item-title {
+    font-size: 21px;     
+    line-height: normal;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .why-seo-item-desc {
+    font-size: 18px;    
+    line-height: 32px;
+    font-weight: 500;
+  }
+
+  /* Small text / links */
+  .why-seo a,
+  .service-intro a {
+    font-size: 18px;    
+    line-height: 1.4;
+    font-weight: 400;
+  }
+}
+
+
+
+
+/* ============================================
+     Our  SERVICES PAGE – 576px to 768px ONLY
+   ============================================ */
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+  /* ========= SECTION 1 – SERVICES INTRO ========= */
+
+  .service-intro {
+    padding: 40px 40px 70px;  
+  }
+
+  .service-intro-container {
+    max-width: 768px;        
+    margin: 0 auto;
+  }
+
+  .service-intro-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 24px;             
+    text-align: center;
+  }
+
+  .service-intro-decor-left,
+  .service-intro-decor-right {
+    display: block;
+    object-fit: contain;
+  }
+
+  .service-intro-decor-left {
+    width: 52px;               
+    height: 52px;
+    align-self: flex-start;
+    margin-left: 480px;       
+    margin-top: -22px;         
+  }
+
+  .service-intro-decor-right {
+    width: 38px;               
+    height: 38px;
+    align-self: flex-end;
+    margin-right: 480px;      
+    margin-top: 6px;           
+  }
+
+  .service-intro-title {
+    font-size: 30px;           
+    line-height: 55px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .service-intro-subtitle {
+    font-size: 22px;          
+    line-height: 38px;
+    font-weight: 500;
+    max-width: 480px;          
+    margin: 0 auto;
+  }
+
+  .service-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 38px;                
+    margin-top: 38px;
+  }
+
+  .service-intro-card {
+    max-width: 670px;        
+    margin: 0 auto;
+    padding: 34px 26px;       
+    border-radius: 18px;      
+
+  
+    min-height: 380px;        
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-intro-card-icon-wrap {
+    height: auto;
+    margin-bottom: 20px;      
+  }
+
+  .service-intro-card-title {
+    font-size: 22px;           
+    line-height: normal;
+    font-weight: 500;
+    min-height: auto;
+    margin-bottom: 12px;
+  }
+
+  .service-intro-card-text {
+    font-size: 22px;          
+    line-height: 38px;
+    font-weight: 500;
+    max-width: 100%;
+    min-height: auto;
+
+   
+    flex-grow: 1;
+    min-height: 180px;        
+  }
+
+
+  /* ========= SECTION 2 – WHY SEO WORKS ========= */
+
+  .why-seo {
+    padding: 20px 26px 50px;   
+  }
+
+  .why-seo-container {
+    max-width: 768px;         
+    margin: 0 auto;
+  }
+
+  .why-seo-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;      
+  }
+
+  .why-seo-title {
+    font-size: 30px;           
+    line-height: 55px;
+    font-weight: 600;
+  }
+
+  .why-seo-decor-curve {
+    display: block !important;
+    position: absolute;
+    width: 80px;              
+    top: -90px;              
+    left: 480px;               
+    object-fit: contain;
+    pointer-events: none;
+  }
+
+  .why-seo-decor-burst {
+    display: none !important;
+  }
+
+  .why-seo-grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;            
+  }
+
+  .why-seo-item {
+    max-width: 520px;         
+    margin: 0 auto;
+    gap: 20px;                 
+  }
+
+  .why-seo-item-title {
+    font-size: 22px;           
+    line-height: normal;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .why-seo-item-desc {
+    font-size: 22px;          
+    line-height: 38px;
+    font-weight: 500;
+  }
+
+  .why-seo a,
+  .service-intro a {
+    font-size: 18px;        
+    line-height: 1.4;
+    font-weight: 400;
+  }
+}
+
+
+
+/* ============================================
+     Our  SERVICES PAGE – 769px to 1024px ONLY
+   ============================================ */
+
+   @media (min-width: 769px) and (max-width: 1024px) {
+
+  /* ========= SECTION 1 – SERVICES INTRO ========= */
+
+  .service-intro {
+    padding: 40px 70px 110px;    /* padding bada */
+  }
+
+  .service-intro-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .service-intro-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 36px;               
+    text-align: center;
+  }
+
+  .service-intro-decor-left,
+  .service-intro-decor-right {
+    display: block;
+    object-fit: contain;
+  }
+
+  .service-intro-decor-left {
+    width: 70px;               
+    height: 70px;
+    align-self: flex-start;
+    margin-left: 820px;         
+    margin-top: -32px;
+  }
+
+  .service-intro-decor-right {
+    width: 52px;
+    height: 52px;
+    align-self: flex-end;
+    margin-right: 820px;
+    margin-top: 1px;
+  }
+
+  .service-intro-title {
+    font-size: 32px;             
+    line-height: 58px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .service-intro-subtitle {
+    font-size: 23px;             
+    line-height: 40px;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .service-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;  
+    gap: 48px;                   
+    margin-top: 48px;
+  }
+
+  .service-intro-card {
+    max-width: 860px;          
+    margin: 0 auto;
+    padding: 42px 34px;          
+    border-radius: 20px;
+
+  
+    display: flex;
+    flex-direction: column;
+    min-height: 440px;
+    box-sizing: border-box;
+  }
+
+  .service-intro-card-icon-wrap {
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .service-intro-card-title {
+    font-size: 24px;           
+    line-height: normal;
+    font-weight: 500;
+    min-height: auto;
+    margin-bottom: 14px;
+  }
+
+  .service-intro-card-text {
+    font-size: 23px;             
+    line-height: 40px;
+    font-weight: 500;
+    max-width: 100%;
+    min-height: auto;
+
+    flex-grow: 1;                
+  }
+
+
+
+  /* ========= SECTION 2 – WHY SEO WORKS ========= */
+
+  .why-seo {
+    padding: 40px 50px 90px;     /* padding bada */
+  }
+
+  .why-seo-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .why-seo-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .why-seo-title {
+    font-size: 32px;             
+    line-height: 58px;
+    font-weight: 600;
+  }
+
+  .why-seo-decor-curve {
+    display: block !important;
+    position: absolute;
+    width: 110px;               
+    top: -130px;
+    left: 650px;                 
+    object-fit: contain;
+    pointer-events: none;
+  }
+
+  .why-seo-decor-burst {
+    display: none !important;
+  }
+
+  .why-seo-grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;               /* gap bada */
+  }
+
+  .why-seo-item {
+    max-width: 950px;           
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .why-seo-item-title {
+    font-size: 24px;             
+    line-height: normal;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .why-seo-item-desc {
+    font-size: 23px;             
+    line-height: 40px;
+    font-weight: 500;
+  }
+
+ 
+  .why-seo a,
+  .service-intro a {
+    font-size: 20px;            
+    line-height: normal;
+    font-weight: 400;
+  }
+}
+
+
+
+
+/* ============================================
+     Our  SERVICES PAGE – 1025px to 1360px ONLY
+   ============================================ */
+
+@media (min-width: 1025px) and (max-width: 1360px) {
+
+  /* ========= SECTION 1 – SERVICES INTRO ========= */
+
+  .service-intro {
+    padding: 40px 60px 80px;
+  }
+
+  .service-intro-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .service-intro-title {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+
+  .service-intro-subtitle {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+
+  /* GRID: 2 columns, desktop style */
+  .service-intro-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+  }
+
+  .service-intro-card {
+    padding: 10px 10px;
+    border-radius: 12px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .service-intro-card-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .service-intro-card-text {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+
+
+  /* ========= SECTION 2 – WHY SEO WORKS ========= */
+
+  .why-seo {
+    padding: 30px 60px 80px;
+    position: relative;      /* REQUIRED for plane adjustment */
+  }
+
+  .why-seo-title {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+
+  .why-seo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+
+  .why-seo-item-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .why-seo-item-desc {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+
+  .why-seo a,
+  .service-intro a {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+
+ .why-seo-decor-curve {
+  position: absolute;
+  width: 90px;           
+  top: -110px;           
+  right: 230px;          
+  left: auto;          
+  transform: none;       
+  pointer-events: none;
+  object-fit: contain;
+}
+
+}
+
+
+
+/* ============================================
+     Our  SERVICES PAGE – 1680px to 1920px ONLY
+   ============================================ */
+
+
+
+
+
+
+ @media (min-width: 1680px) and (max-width: 1920px) {
+
+  /* ========= SECTION 1 – SERVICES INTRO ========= */
+
+  .service-intro {
+    padding: 50px 80px 90px;
+  }
+
+  .service-intro-container {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .service-intro-title {
+    font-size: 46px;
+    line-height: 66px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  .service-intro-subtitle {
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 500;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .service-intro-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 34px;
+  }
+
+  .service-intro-card {
+    padding: 40px 28px;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+  }
+
+  .service-intro-card-icon-wrap {
+    height: auto;
+    margin-bottom: 22px;
+  }
+
+  .service-intro-card-title {
+    font-size: 26px;
+    line-height: normal;
+    font-weight: 600;
+    min-height: 70px;
+    margin-bottom: 12px;
+  }
+
+  .service-intro-card-text {
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 500;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+
+  /* ========= SECTION 2 – WHY SEO WORKS ========= */
+
+  .why-seo {
+    padding: 20px 40px 100px;
+  }
+
+  .why-seo-container {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .why-seo-header {
+    margin-bottom: 110px;
+  }
+
+  .why-seo-title {
+    font-size: 46px;
+    line-height: 66px;
+    font-weight: 600;
+  }
+
+  .why-seo-decor-curve {
+    width: 110px;
+  }
+
+  .why-seo-decor-burst {
+    width: 96px;
+    height: 96px;
+  }
+
+  .why-seo-grid {
+    grid-template-columns: repeat(2, minmax(0, 540px));
+    column-gap: 140px;
+    row-gap: 60px;
+  }
+
+  .why-seo-item {
+    max-width: 560px;
+    gap: 22px;
+  }
+
+  .why-seo-item-title {
+    font-size: 26px;
+    line-height: normal;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .why-seo-item-desc {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+
+  .why-seo a,
+  .service-intro a {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+  }
+}
+
+
+
+
+/* ============================================
+     FAQ PAGE – 0px to 430px ONLY
+   ============================================ */
+
+@media (max-width: 430px) {
+
+  .faq {
+    padding: 24px 20px;
+  }
+
+  .faq .container {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .faq .about-hero-title {
+    font-size: 26px;
+    line-height: 41px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  
+
+  
+
+  
+
+  
+
+  .faq-section {
+    padding: 20px 20px 60px;
+  }
+
+  .faq-container {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .faq-item {
+    padding: 18px 18px;
+  }
+
+  .faq-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .faq-question {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 500;
+    max-width: 90%;
+  }
+
+  .faq-toggle-icon img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .faq-content {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .faq-content ul li {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  .faq a,
+  .faq-content a {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+  }
+}
+
+
+/* ============================================
+     FAQ PAGE – 431px to 575px ONLY
+   ============================================ */
+
+@media (min-width: 431px) and (max-width: 575px) {
+
+  .faq {
+    padding: 26px 20px;
+  }
+
+  .faq .container {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .faq .about-hero-title {
+    font-size: 27px;
+    line-height: 44px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  
+
+  
+
+  
+
+  
+
+  .faq-section {
+    padding: 26px 20px 70px;
+  }
+
+  .faq-container {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .faq-item {
+    padding: 20px 18px;
+  }
+
+  .faq-question {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    max-width: 90%;
+  }
+
+  .faq-toggle-icon img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .faq-content {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .faq-content ul li {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .faq a,
+  .faq-content a {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+
+
+/* ============================================
+   FAQ PAGE – 576px to 768px
+   ============================================ */
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+  .faq {
+    padding: 30px 40px;
+  }
+
+  .faq .container {
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .faq .about-hero-title {
+    font-size: 30px;
+    line-height: 55px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  
+
+  
+
+  .faq-section {
+    padding: 30px 40px 80px;
+  }
+
+  .faq-container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .faq-item {
+    padding: 22px 22px;
+  }
+
+  .faq-question {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .faq-toggle-icon img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .faq-content {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .faq-content ul li {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .faq a,
+  .faq-content a {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+
+
+/* ============================================
+   FAQ PAGE – 769px to 1024px
+   ============================================ */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .faq {
+    padding: 36px 40px;
+  }
+
+  .faq .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .faq .about-hero-title {
+    font-size: 32px;
+    line-height: 58px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  
+
+  
+
+  .faq-section {
+    padding: 40px 50px 90px;
+  }
+
+  .faq-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  .faq-item {
+    padding: 24px 24px;
+  }
+
+  .faq-question {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .faq-toggle-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .faq-content {
+    font-size: 23px;
+    line-height: 40px;
+  }
+
+  .faq-content ul li {
+    font-size: 23px;
+    line-height: 40px;
+  }
+
+  .faq a,
+  .faq-content a {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+
+
+/* ============================================
+   FAQ PAGE – 1025px to 1360px
+   ============================================ */
+
+@media (min-width: 1025px) and (max-width: 1360px) {
+
+  .faq {
+    padding: 40px 0;
+  }
+
+  .faq .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .faq .about-hero-title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 6px;
+  }
+
+  
+
+  
+
+  .faq-section {
+    padding: 40px 60px 80px;
+  }
+
+  .faq-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .faq-item {
+    padding: 22px 22px;
+  }
+
+  .faq-question {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .faq-toggle-icon img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .faq-content {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .faq-content ul li {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .faq a,
+  .faq-content a {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+
+
+/* ============================================
+   FAQ PAGE – 1680px to 1920px
+   ============================================ */
+
+@media (min-width: 1680px) and (max-width: 1920px) {
+
+  .faq {
+    padding: 70px 0;
+  }
+
+  .faq .container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 80px;
+    text-align: center;
+  }
+
+  .faq .about-hero-title {
+    font-size: 46px;
+    line-height: 66px;
+    margin-bottom: 14px;
+  }
+
+  
+
+  
+
+  .faq-section {
+    padding: 60px 80px 110px;
+    position: relative;
+  }
+
+  .faq-container {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .faq-item {
+    padding: 28px 26px;
+  }
+
+  .faq-question {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 600;
+  }
+
+  .faq-toggle-icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .faq-content {
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 12px;
+  }
+
+  .faq-content ul li {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .faq a,
+  .faq-content a {
+    font-size: 16px;
+  }
+
+  /* Decorative positioning */
+  .faq-decor-left,
+  .faq-decor-right {
+    position: absolute;
+    pointer-events: none;
+    object-fit: contain;
+  }
+
+  .faq-decor-left {
+    top: 1250px;
+    left: 40px;
+    width: 30px;
+  }
+
+  .faq-decor-right {
+    top: 20px;
+    right: 40px;
+    width: 40px;
+  }
+}
+
+
+
+
+/* ============================================
+     Why Choose Us – 0px to 430px ONLY
+   ============================================ */
+
+@media (max-width: 430px) {
+
+  /* =============================
+       WHY CHOOSE US – SECTION 1
+  ============================== */
+
+  .why-choose-us {
+    padding: 24px 20px;
+  }
+
+  .why-choose-us .container {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .why-choose-us .about-hero-title {
+    font-size: 26px;
+    line-height: 41px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  .why-chooseus {
+    padding: 20px 16px 50px;
+  }
+
+  .whychoose-container {
+    max-width: 430px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .whychoose-left {
+    display: contents;
+  }
+
+  .whychoose-title {
+    order: 1;
+    font-size: 26px;
+    line-height: 44px;
+    font-weight: 600;
+    margin-bottom: 1px;
+  }
+
+  .whychoose-title .wc-accent {
+    font-weight: 600;
+  }
+
+  .underline-box {
+    position: relative;
+    display: inline-block;
+  }
+
+  .underline-box.u1 .underline {
+    width: 102px;
+    height: 4px;
+  }
+
+  .underline-box.u2 .underline {
+    width: 54px;
+    height: 4px;
+  }
+
+  .underline-box .underline {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+  }
+
+  .whychoose-desc {
+    order: 2;
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 500;
+    max-width: 360px;
+  }
+
+  .whychoose-right {
+    order: 3;
+    text-align: center;
+    margin-bottom: 22px;
+    position: relative;
+  }
+
+  .wc-art {
+    width: 308px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .wc-triangle {
+    position: absolute;
+    top: -520px;
+    right: -20px;
+    width: 68px;
+    height: auto;
+    z-index: 10;
+  }
+
+  .whychoose-list {
+    order: 4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .wc-box {
+    width: 100%;
+    border-radius: 16px;
+    padding: 12px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* ICON TOP */
+    gap: 16px;
+    text-align: left;
+  }
+
+  .wc-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 54px;
+    min-height: 54px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wc-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  .wc-text {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+
+  /* =============================
+        RESULTS SECTION – SECTION 2
+  ============================== */
+
+ .results-section {
+  width: 100%;
+  padding: 0 0 40px;
+  position: relative;
+}
+
+.results-wrap {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+.decor-arrow-left,
+.decor-curve-right,
+.decor-ring-right {
+  display: block !important;
+  position: absolute;
+}
+
+.decor-arrow-left {
+  top: 30px;
+  left: 0;
+  width: 60px;
+}
+
+.decor-curve-right {
+  top: -40px;
+  right: 5px;
+  width: 60px;
+  height: 120px;
+}
+
+.decor-ring-right {
+  top: 0;
+  right: 5px;
+  width: 23px;
+}
+
+.results-intro {
+  text-align: center;
+  max-width: 360px;
+  margin: 0 auto 26px;
+  padding-top: 18px;
+}
+
+.results-heading {
+  font-size: 26px;
+  line-height: 41px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto 6px;
+  max-width: 245px;
+}
+
+.heading-underline {
+  position: relative;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  top: -50px;
+  left: -30px;
+}
+
+.results-sub {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 38px;
+  font-weight: 500;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.results-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.result-card {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 32px 20px 28px;
+  border-radius: 16px;
+  text-align: center;
+  height: 260px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin: -54px auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.result-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.result-text {
+  font-size: 16px;
+  line-height: 28px;
+}
 
 }
